@@ -1,0 +1,15 @@
+instrument, FM-700  ;  objective, 40x
+specimen, QT-423-33 ; method, HV0.5 ; dwell_s, 12
+seq,id,use,x_um,y_um,d1_um,d2_um,focus,program
+1,W1,W, -520.0, -410.0, 60.59, 60.95,OK,RSTR-8B-revF
+2,W2,W, -300.0, -410.0, 60.28, 60.63,ok ,RSTR-8B-revF
+3,R1,R, 0.0, -34.0, 56.73, 57.11,OK,RSTR-8B-revF
+4,R2,R, 217.0, 34.0, 56.99, 57.35,OK,RSTR-8B-revF
+5,R3,R, 434.0, -34.0, 57.18, 57.49,OK,RSTR-8B-revF
+6,R4,R, 651.0, 34.0, 57.37, 57.75,OK,RSTR-8B-revF
+7,R5,R, 868.0, -34.0, 57.52, 57.86,OK,RSTR-8B-revF
+8,R6,R, 1085.0, 34.0, 57.72, 58.06,OK,RSTR-8B-revF
+9,R7,R, 1302.0, -34.0, 57.88, 58.23,OK,RSTR-8B-revF
+10,R8,R, 1519.0, 34.0, 56.82, 57.19,OK,RSTR-8B-revF
+
+Export note: diagonals are operator edge picks; no HV column requested.

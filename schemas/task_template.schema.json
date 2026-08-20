@@ -1,0 +1,244 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "crucible/task_template/v1",
+  "title": "CRUCIBLE Task Template v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "template_id", "version", "status", "editor_of_record",
+    "identity", "target_population", "construct", "source", "family_conditions",
+    "instances", "resources", "truth", "verification", "contamination", "safety", "admission"
+  ],
+  "properties": {
+    "schema_version": {"const": "crucible.task_template.v1"},
+    "template_id": {"type": "string", "pattern": "^[A-Z0-9-]+$"},
+    "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "status": {"enum": [
+      "NOMINATED", "TRIAGED", "RIGHTS_CLEARED", "SCIENCE_SCREENED", "DATA_VERIFIED",
+      "TASK_FRAMED", "TRUTH_REGIME_ASSIGNED", "CONSTRUCT_REVIEWED", "BUILT",
+      "INDEPENDENTLY_REVIEWED", "SHORTCUT_AUDITED", "PILOTED", "ADMITTED", "FROZEN",
+      "REJECTED", "DEFERRED", "REQUIRES_REDESIGN", "RETIRED", "RETRACTED"
+    ]},
+    "editor_of_record": {"type": "string", "minLength": 1},
+    "created_at": {"type": "string"},
+    "updated_at": {"type": "string"},
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title_internal", "domain", "subdomain", "source_class", "track_eligibility", "primary_track", "truth_regimes_used"],
+      "properties": {
+        "title_internal": {"type": "string", "minLength": 1},
+        "title_public": {"type": ["string", "null"]},
+        "domain": {"type": "string"},
+        "subdomain": {"type": "string"},
+        "source_class": {"enum": [
+          "REAL_REQUEST", "PRIVATE_PROJECT", "PUBLIC_STUDY", "PUBLIC_DATASET",
+          "TRANSFORMED_STUDY", "FUTURE_OUTCOME", "PROSPECTIVE_EXPERIMENT",
+          "SIMULATOR", "FAULT_SCENARIO"
+        ]},
+        "track_eligibility": {"type": "array", "minItems": 1, "items": {"enum": ["A","B","C","D","E","F","G","H","M"]}, "uniqueItems": true},
+        "primary_track": {"enum": ["A","B","C","D","E","F","G","H","M"]},
+        "truth_regimes_used": {"type": "array", "minItems": 1, "items": {"enum": ["TR1","TR2","TR3"]}, "uniqueItems": true}
+      }
+    },
+    "target_population": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["population_version", "user_roles", "real_work_frequency_source", "consequence_level"],
+      "properties": {
+        "population_version": {"type": "string"},
+        "user_roles": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "organization_types": {"type": "array", "items": {"type": "string"}},
+        "real_work_frequency_source": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "consequence_level": {"enum": ["low", "medium", "high"]},
+        "naturalistic_eligible": {"type": "boolean"},
+        "stress_test_eligible": {"type": "boolean"}
+      }
+    },
+    "construct": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision_or_deliverable", "construct_components", "scientific_claim_types", "openness", "expected_expert_minutes"],
+      "properties": {
+        "decision_or_deliverable": {"type": "string", "minLength": 20},
+        "construct_components": {"type": "array", "minItems": 1, "items": {"enum": [
+          "grounding", "method_reasoning", "execution", "epistemic_discipline",
+          "reproducibility", "collaboration", "operational_safety"
+        ]}},
+        "scientific_claim_types": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "openness": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["framing", "method", "trajectory", "answer", "outcome", "world", "utility"],
+          "properties": {
+            "framing": {"type": "integer", "minimum": 0, "maximum": 2},
+            "method": {"type": "integer", "minimum": 0, "maximum": 2},
+            "trajectory": {"type": "integer", "minimum": 0, "maximum": 2},
+            "answer": {"type": "integer", "minimum": 0, "maximum": 2},
+            "outcome": {"type": "integer", "minimum": 0, "maximum": 2},
+            "world": {"type": "integer", "minimum": 0, "maximum": 2},
+            "utility": {"type": "integer", "minimum": 0, "maximum": 2}
+          }
+        },
+        "expected_expert_minutes": {
+          "type": "object",
+          "required": ["median"],
+          "properties": {
+            "median": {"type": "number", "exclusiveMinimum": 0},
+            "range": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2}
+          }
+        },
+        "required_capabilities": {"type": "array", "items": {"type": "string"}},
+        "clarification_enabled": {"type": "boolean"}
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_cluster_id", "distribution_mode"],
+      "properties": {
+        "source_cluster_id": {"type": "string", "minLength": 1},
+        "source_studies": {"type": "array", "items": {"type": "object"}},
+        "fidelity_check": {"type": "object"},
+        "distribution_mode": {"enum": ["REDISTRIBUTABLE", "FETCH_CONTROLLED", "SEALED"]}
+      }
+    },
+    "transformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["is_transformed"],
+      "properties": {
+        "is_transformed": {"type": "boolean"},
+        "operator_family": {"type": "string"},
+        "properties_preserved": {"type": "array", "items": {"type": "string"}},
+        "properties_changed": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "family_conditions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["condition_id", "label", "hazard_present"],
+        "properties": {
+          "condition_id": {"type": "string"},
+          "label": {"type": "string"},
+          "hazard_present": {"type": "boolean"},
+          "hazard_ids": {"type": "array", "items": {"type": "string"}},
+          "decoy_ids": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "instances": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generator", "split_policy"],
+      "properties": {
+        "generator": {
+          "type": "object",
+          "required": ["seeds_allowed", "max_primary_instances_per_release"],
+          "properties": {
+            "seeds_allowed": {"type": "array", "items": {"type": "integer"}},
+            "max_primary_instances_per_release": {"type": "integer", "minimum": 1, "maximum": 3}
+          }
+        },
+        "split_policy": {
+          "type": "object",
+          "required": ["source_holdout_level", "exposure_class"],
+          "properties": {
+            "source_holdout_level": {"enum": ["B0","B1","B2","B3","B4","B5","B6","B7","B8","B9"]},
+            "exposure_class": {"enum": [
+              "E0_SEALED_POST_FREEZE", "E1_PRIVATE_PREEXISTING", "E2_PUBLIC_SOURCE_HIDDEN_TASK",
+              "E3_PUBLIC_TEMPLATE_NEW_INSTANCE", "E4_PUBLIC_TASK_RETIRED", "E5_CONFIRMED_EXPOSED"
+            ]}
+          }
+        },
+        "instance_registry_ref": {"type": "string"}
+      }
+    },
+    "resources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["wall_clock_minutes", "network_mode"],
+      "properties": {
+        "wall_clock_minutes": {"type": "number", "exclusiveMinimum": 0},
+        "cpu_core_hours": {"type": "number", "minimum": 0},
+        "gpu_hours": {"type": "number", "minimum": 0},
+        "storage_gb": {"type": "number", "minimum": 0},
+        "network_mode": {"enum": ["OFFLINE", "CONTROLLED_LITERATURE", "ALLOWLISTED_SERVICES", "FULL_WEB_LOGGED", "NATIVE_PRODUCT_NETWORK"]},
+        "financial_cap_usd": {"type": "number", "minimum": 0},
+        "human_approval_mode": {"type": "string"},
+        "sessions": {"type": "integer", "minimum": 1}
+      }
+    },
+    "truth": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["dossier_ref", "truth_version"],
+      "properties": {
+        "dossier_ref": {"type": "string"},
+        "claim_registry_ref": {"type": "string"},
+        "acceptance_set_ref": {"type": "string"},
+        "uncertainty_ref": {"type": "string"},
+        "independent_analysts": {"type": "array", "items": {"type": "string"}},
+        "adversarial_review_ref": {"type": "string"},
+        "truth_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"}
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["manifest_ref"],
+      "properties": {
+        "manifest_ref": {"type": "string"},
+        "verifier_package_ref": {"type": "string"},
+        "positive_tests_ref": {"type": "string"},
+        "negative_tests_ref": {"type": "string"},
+        "automated_judge_classes": {"type": "array", "items": {"type": "string"}},
+        "mandatory_human_claims": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "contamination": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["exposure_record_ref"],
+      "properties": {
+        "exposure_record_ref": {"type": "string"},
+        "source_fingerprint_ref": {"type": "string"},
+        "shortcut_audit_ref": {"type": "string"},
+        "access_conditions_allowed": {"type": "array", "items": {"enum": ["C0","C1","C2","C3","C4"]}},
+        "canary_ids": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["risk_class", "dual_use_status", "privacy_class"],
+      "properties": {
+        "risk_class": {"enum": ["LOW", "MEDIUM", "HIGH"]},
+        "dual_use_status": {"enum": ["PASS", "REVIEW", "FAIL"]},
+        "privacy_class": {"type": "string"},
+        "authority_policy_ref": {"type": "string"},
+        "containment_test_ref": {"type": "string"}
+      }
+    },
+    "pilot": {"type": "object", "additionalProperties": true},
+    "admission": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["construct_review", "truth_review", "verification_review", "shortcut_review", "safety_review", "final_decision"],
+      "properties": {
+        "construct_review": {"enum": ["PASS", "PASS_WITH_LIMITATIONS", "FAIL", "PENDING"]},
+        "truth_review": {"enum": ["PASS", "PASS_WITH_LIMITATIONS", "FAIL", "PENDING"]},
+        "verification_review": {"enum": ["PASS", "PASS_WITH_LIMITATIONS", "FAIL", "PENDING"]},
+        "shortcut_review": {"enum": ["PASS", "PASS_WITH_LIMITATIONS", "FAIL", "PENDING"]},
+        "safety_review": {"enum": ["PASS", "PASS_WITH_LIMITATIONS", "FAIL", "PENDING"]},
+        "statistics_review": {"enum": ["PASS", "PASS_WITH_LIMITATIONS", "FAIL", "PENDING"]},
+        "final_decision": {"enum": ["ADMIT", "REJECT", "REDESIGN", "PENDING"]},
+        "decision_ref": {"type": "string"}
+      }
+    },
+    "maintenance": {"type": "object", "additionalProperties": true}
+  }
+}

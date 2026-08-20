@@ -1,0 +1,12 @@
+MATERIAL CERTIFICATE EXTRACT
+Heat: H60012     route: Q7
+Product: quenched and tempered low-alloy steel coupon
+
+element, mass_percent, method
+C, 0.398, OES
+Mn,0.852,OES
+Cr, 0.944, OES
+Mo,0.212, OES
+Ni, 0.170, OES
+
+Coupon identity matched to saw ticket: QT-422-32

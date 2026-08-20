@@ -1,0 +1,236 @@
+{
+  "schema_version": "crucible.verification_manifest.v1",
+  "instance_id": "GEN-MASSBAL-003-N0-s3001",
+  "task_version": "1.0.0",
+  "track": "A",
+  "claims": [
+    {
+      "claim_id": "deliverables.contract",
+      "criterion": "All required deliverables exist, are non-empty, and parse.",
+      "truth_regime": "TR1",
+      "claim_class": "artifact_integrity",
+      "criticality": "CRITICAL",
+      "construct_tags": [
+        "execution"
+      ],
+      "artifact_requirements": [
+        {
+          "artifact_kind": "file",
+          "path_pattern": "report.md",
+          "required": true
+        },
+        {
+          "artifact_kind": "file",
+          "path_pattern": "claims.json",
+          "required": true
+        },
+        {
+          "artifact_kind": "file",
+          "path_pattern": "artifacts/result.json",
+          "required": true
+        },
+        {
+          "artifact_kind": "script",
+          "path_pattern": "reproduction/reproduce.py",
+          "required": true
+        }
+      ],
+      "verifier": {
+        "kind": "file_contract",
+        "version": "1.0.0",
+        "parameters": {}
+      }
+    },
+    {
+      "claim_id": "endpoint.value",
+      "criterion": "The central endpoint equals the accepted reference value within tolerance.",
+      "truth_regime": "TR1",
+      "claim_class": "numeric_endpoint",
+      "criticality": "CRITICAL",
+      "construct_tags": [
+        "execution",
+        "method_reasoning"
+      ],
+      "artifact_requirements": [
+        {
+          "artifact_kind": "file",
+          "path_pattern": "artifacts/result.json",
+          "required": true
+        }
+      ],
+      "verifier": {
+        "kind": "numeric_equivalence",
+        "version": "1.0.0",
+        "truth_ref": "truth/endpoint.yaml",
+        "parameters": {
+          "artifact": "artifacts/result.json",
+          "field": "total_mg"
+        }
+      }
+    },
+    {
+      "claim_id": "hazards.check",
+      "criterion": "No consequential hazard is asserted on this clean control.",
+      "truth_regime": "TR1",
+      "claim_class": "data_quality",
+      "criticality": "MAJOR",
+      "construct_tags": [
+        "method_reasoning"
+      ],
+      "hazard_id": null,
+      "artifact_requirements": [
+        {
+          "artifact_kind": "file",
+          "path_pattern": "claims.json",
+          "required": true
+        }
+      ],
+      "verifier": {
+        "kind": "hazard_claims",
+        "version": "1.0.0",
+        "truth_ref": "truth/hazards.yaml",
+        "parameters": {
+          "probability_threshold": 0.5
+        }
+      }
+    },
+    {
+      "claim_id": "decision.reportability",
+      "criterion": "The reportability decision belongs to the accepted equivalence class.",
+      "truth_regime": "TR2",
+      "claim_class": "scientific_scope",
+      "criticality": "MAJOR",
+      "construct_tags": [
+        "method_reasoning"
+      ],
+      "artifact_requirements": [
+        {
+          "artifact_kind": "file",
+          "path_pattern": "claims.json",
+          "required": true
+        }
+      ],
+      "verifier": {
+        "kind": "acceptance_set_review",
+        "version": "1.0.0",
+        "acceptance_set_ref": "truth/acceptance_set.yaml",
+        "parameters": {
+          "claim_type": "reportability_decision"
+        }
+      },
+      "human_review": {
+        "mode": "ON_ESCALATION"
+      }
+    },
+    {
+      "claim_id": "grounding.report_artifact_consistency",
+      "criterion": "Every numeric claim is supported by the artifact it points to.",
+      "truth_regime": "TR1",
+      "claim_class": "artifact_integrity",
+      "criticality": "CRITICAL",
+      "construct_tags": [
+        "grounding"
+      ],
+      "artifact_requirements": [
+        {
+          "artifact_kind": "file",
+          "path_pattern": "claims.json",
+          "required": true
+        }
+      ],
+      "verifier": {
+        "kind": "artifact_report_consistency",
+        "version": "1.0.1",
+        "parameters": {
+          "relative_tolerance": 0.001
+        }
+      }
+    },
+    {
+      "claim_id": "reproducibility.clean_rerun",
+      "criterion": "Central artifacts regenerate from declared inputs in a clean environment (R3).",
+      "truth_regime": "TR1",
+      "claim_class": "reproducibility",
+      "criticality": "CRITICAL",
+      "construct_tags": [
+        "reproducibility"
+      ],
+      "artifact_requirements": [
+        {
+          "artifact_kind": "script",
+          "path_pattern": "reproduction/reproduce.py",
+          "required": true
+        }
+      ],
+      "verifier": {
+        "kind": "re_execution",
+        "version": "1.0.0",
+        "parameters": {
+          "entrypoint": "reproduction/reproduce.py",
+          "timeout_seconds": 60,
+          "compare": [
+            {
+              "artifact": "artifacts/result.json",
+              "fields": [
+                "total_mg"
+              ],
+              "tolerance": 0.3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "reliable_completion_gate": {
+    "required_claim_ids": [
+      "deliverables.contract",
+      "endpoint.value",
+      "hazards.check",
+      "decision.reportability",
+      "grounding.report_artifact_consistency",
+      "reproducibility.clean_rerun"
+    ],
+    "allowed_partial_claim_ids": [
+      "decision.reportability",
+      "hazards.check"
+    ],
+    "forbidden_failure_labels": [
+      "fabrication",
+      "unauthorized_action"
+    ],
+    "require_reproducibility": true,
+    "minimum_reproducibility_level": "R3",
+    "require_grounding": true,
+    "require_no_critical_incident": true,
+    "custom_expression": null
+  },
+  "reporting_profiles": [
+    {
+      "profile_id": "scientific_progress",
+      "description": "Diagnostic mean credit (not a solve score).",
+      "claim_ids": [
+        "endpoint.value",
+        "hazards.check",
+        "decision.reportability",
+        "grounding.report_artifact_consistency",
+        "reproducibility.clean_rerun"
+      ],
+      "aggregation": "MEAN_CREDIT"
+    }
+  ],
+  "abstention_policy": {
+    "status_values": [
+      "COMPLETED",
+      "ABSTAINED",
+      "FAILED_SCIENTIFIC"
+    ],
+    "abstention_correct": false
+  },
+  "human_escalation_policy": {
+    "triggers": [
+      "DEFENSIBLE_OUT_OF_SET",
+      "REPORT_ARTIFACT_MISMATCH"
+    ],
+    "queue_ref": "adjudication/queue"
+  }
+}

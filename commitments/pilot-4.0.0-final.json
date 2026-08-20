@@ -1,0 +1,7 @@
+{
+  "label": "pilot-4.0.0-final",
+  "committed_at": "2026-08-17T01:31:34Z",
+  "n_sealed_files": 835,
+  "manifest_sha256": "9f1993ab5fd84df0cffcc8061fe09ab4ef3ced75c7477322ce592624f34dd60f",
+  "scheme": "sha256(salt || file_bytes) per file; manifest digest over the sorted JSON; salt withheld until post-campaign reveal"
+}

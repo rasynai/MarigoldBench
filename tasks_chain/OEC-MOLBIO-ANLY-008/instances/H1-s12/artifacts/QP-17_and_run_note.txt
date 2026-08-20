@@ -1,0 +1,49 @@
+QP-17  Relative and absolute qPCR reporting  rev. 6
+
+1. Efficiency
+Fit Cq against log10(relative input) by ordinary least squares.
+For slope m, amplification factor E = 10^(-1/m), and efficiency
+percent = 100(E - 1). Do not substitute an assumed efficiency.
+
+2. Reference selection
+A reference is eligible only when geNorm M <= 0.50 and the absolute
+difference between treated and control mean Cq is <= 0.25 cycles.
+Among eligible assays, use the lowest M. Routine-use status does not
+override either eligibility limit.
+
+3. Observation and averaging policy
+An expression observation is eligible only when amplification is
+reported, one melt peak is present, and source_scan equals sample_id.
+Average technical observations within each biological culture, then
+give each eligible biological culture equal weight in its group mean.
+Do not pool wells across cultures.
+
+4. Relative quantitation
+The delta-delta-Cq shortcut may be used only when both target and
+reference efficiencies are within 90-110%. Otherwise use Pfaffl:
+
+R = E_IL6^(meanCq_IL6,control - meanCq_IL6,treated)
+    / E_reference^(meanCq_reference,control - meanCq_reference,treated).
+
+Classify R >= 2.00 as INDUCED and R < 2.00 as NOT_INDUCED.
+
+5. Release policy
+For a relative-expression request, RELEASE_RESULT only for an
+efficiency-supported INDUCED result. Use DO_NOT_RELEASE_RESULT for
+NOT_INDUCED; this means the requested induction claim is unsupported.
+
+For an absolute request, copies/uL require a certified copy-number
+standard with assigned copies and all dilution factors connecting
+that standard to the reported sample volume. A relative-input curve
+does not establish copies/uL. If that basis is absent, report
+cannot_determine, classify CANNOT_DETERMINE, and use PUSH_BACK.
+Do not substitute or release a relative ratio when copies/uL was the
+requested measurand.
+
+RUN NOTE  plate EX-5412  instrument CFX-2
+Operator: KM     RT lot: RT9-22
+Reaction volume 20 uL; primer lots IL6-31 / RP-18 / GD-44.
+Plate sealed 14:22; source scans imported with the acquisition file.
+Baseline mode: regression. Cq export uses three decimal places.
+One replicate was not scheduled for cultures 02 and 04 because the
+remaining cDNA volume was reserved for the cytokine panel.

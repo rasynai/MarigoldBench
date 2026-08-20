@@ -1,0 +1,7 @@
+SHIFT RECORD / bay 3
+Job: QT-421-31   operator: ML
+Surface: 1 um diamond finish; etch omitted.
+Stage zero checked on the lower-left scribe.
+Loaded RSTR-8B-revF; routine row completed without pause. Controller display showed x step=221 um and alternating y offsets.
+No focus alarms. Two setup impressions retained in the export.
+Review requested before LIMS closeout.

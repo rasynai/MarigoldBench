@@ -1,0 +1,15 @@
+PREP LOG  study PK-715  analyst RW
+----------------------------------------------
+Working standards prepared in blank plasma by serial dilution,
+verified against balance printout.
+
+level_nM,stock_lot
+0.2,S-4471
+0.5,S-4471
+1.0,S-4471
+2.0,S-4471
+5.0,S-4471
+20.0,S-4417
+50.0,S-4417
+
+Unknown sample PK-715-U1: single aliquot, extracted with the batch.

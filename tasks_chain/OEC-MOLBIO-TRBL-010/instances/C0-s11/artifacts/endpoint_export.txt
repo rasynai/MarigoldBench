@@ -1,0 +1,25 @@
+Run NR-2411  endpoint export
+reader: CLARIOstar-07 ; gain 1250 ; endpoint 18 h
+
+well , sample , dose_nM , log2_induction , final_uL , flags
+B3 , NFKB-luc , 0.5 , -0.526 , 50.1 , --
+C3 , NFKB-luc , 0.5 , -0.507 , 49.2 , --
+D3 , NFKB-luc , 0.5 , -0.557 , 48.4 , --
+B4 , NFKB-luc , 1.0 , -0.135 , 49.9 , --
+C4 , NFKB-luc , 1.0 , -0.174 , 49.1 , --
+D4 , NFKB-luc , 1.0 , -0.158 , 49.7 , --
+B5 , NFKB-luc , 2.0 , 0.219 , 49.1 , --
+C5 , NFKB-luc , 2.0 , 0.180 , 49.6 , --
+D5 , NFKB-luc , 2.0 , 0.233 , 48.2 , --
+B6 , NFKB-luc , 4.0 , 0.593 , 48.5 , --
+C6 , NFKB-luc , 4.0 , 0.564 , 48.4 , --
+D6 , NFKB-luc , 4.0 , 0.581 , 48.7 , --
+A7 , NFKB-luc , 8.0 , 1.014 , 47.9 , --
+A8 , NFKB-luc , 8.0 , 0.982 , 47.9 , --
+B7 , NFKB-luc , 8.0 , 0.922 , 48.3 , --
+A9 , NFKB-luc , 16.0 , 1.366 , 48.4 , --
+A10 , NFKB-luc , 16.0 , 1.368 , 47.9 , --
+B9 , NFKB-luc , 16.0 , 1.338 , 49.4 , --
+
+Export note: final_uL is the post-read acoustic volume estimate.
+Rows are in acquisition order, not dose order.

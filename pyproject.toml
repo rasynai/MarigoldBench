@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "marigoldbench"
+version = "0.1.0"
+description = "MarigoldBench: verified episode completion for agentic computational drug discovery"
+requires-python = ">=3.11"
+dependencies = [
+    "jsonschema>=4.0",
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+crucible = "crucible.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["crucible*"]

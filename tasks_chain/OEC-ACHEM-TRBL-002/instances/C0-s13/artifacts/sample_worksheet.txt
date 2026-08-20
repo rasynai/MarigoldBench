@@ -1,0 +1,12 @@
+Sample worksheet / chromatographic result
+Work order: IM-4113
+Sample: IM-4113-DS1    prep dilution: 1.000
+
+peak             rt_min   area_count   integration
+Impurity A       7.42     1820.1      BB
+Unknown-1        9.08     673.4      BB
+Unknown-2       11.63     400.4      skim
+
+Main assay peak omitted from this export.
+Blank: no peak above 0.003 percent equivalent at the Impurity A RT.
+System suitability: resolution 2.3; area RSD 0.8 percent (n=6).

@@ -1,0 +1,11 @@
+study_id,interval,risk_at_start,relapse_first,death_no_prior_relapse,withdrawn
+SR-4115, 1, 239, 1, 25, 3
+SR-4115, 2, 210, 2, 19, 4
+SR-4115, 3, 185, 5, 15, 6
+SR-4115, 4, 159, 8, 8, 5
+SR-4115, 5, 138, 9, 5, 5
+
+Note: risk_at_start is the number under observation immediately
+before the interval. Each listed outcome removes a participant before
+the next interval; no participant appears in two outcome columns.
+Intervals are consecutive 90-day windows after treatment initiation.

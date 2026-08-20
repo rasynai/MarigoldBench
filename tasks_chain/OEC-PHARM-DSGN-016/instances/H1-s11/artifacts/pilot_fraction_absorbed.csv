@@ -1,0 +1,11 @@
+study_id,subject,nominal_h,verified_elapsed_h,Fa,status,exclusion_code
+PK-431,S21,0.05,0.046,0.0614,ok,
+PK-431,S21,0.10,0.113,0.1788,ok,
+PK-431,S21,0.20,0.216,0.3054,repeat_calc,
+PK-431,S21,0.40,0.367,0.4633,ok,
+PK-431,S21,0.60,0.588,0.6324,ok,
+PK-431,S21,0.80,0.826,0.7517,late tray,
+PK-431,S21,1.50,1.177,0.8035,ok,
+
+Export: WN worksheet v3.2  /  reviewer column retained
+Fa values are dimensionless fractions, not percentages.

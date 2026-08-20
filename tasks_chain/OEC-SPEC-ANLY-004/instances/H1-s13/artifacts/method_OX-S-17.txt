@@ -1,0 +1,39 @@
+HRMS METHOD OX-S-17, revision 6
+--------------------------------
+Purpose: identity confirmation and quantitation of the sulfur-oxidized
+product in solution samples using an authentic S-oxide calibrant.
+
+Identity policy
+A putative isotope relationship must be tested using the response
+ratio in each of the five exported chromatographic slices. Calculate
+sample standard deviation divided by the mean and report it as percent
+RSD. Ratios with RSD greater than 8.0% are not accepted as one
+isotopologue envelope, irrespective of an apex or integrated ratio.
+S-oxidation is assigned when the precursor shift from the supplied
+parent is within 5 ppm of addition of one oxygen and the product ion
+retains the same shift. Under that assignment chlorine is not reported.
+
+Quantitation policy
+Use only the diagnostic product-ion response-ratio column for the
+S-oxide result. The precursor A+2 extraction is a survey column and
+may contain unresolved ions. Fit response ratio versus concentration
+with a linear intercept and 1/x weighting. Back-calculate the vial
+concentration as (response - intercept) / slope.
+
+Sample preparation and reporting
+Multiply the vial concentration by the recorded source-to-vial dilution
+factor. A signed preparation record takes precedence over worklist
+metadata. A factor must not be inferred when no volume or factor is
+recorded. Confirmed source results from 3.0 through 4.5 nM, inclusive,
+are released; other numeric results are not released under this work
+order. If source concentration cannot be reconstructed, return the
+request for the missing preparation information.
+
+Reference masses for this run
+parent precursor [M+H]+ : 411.133307
+candidate precursor     : 427.128222
+parent product ion      : 178.074682
+candidate product ion   : 194.069597
+
+Masses are neutral-calibrated centroid values; electron mass treatment
+is common to each paired difference.

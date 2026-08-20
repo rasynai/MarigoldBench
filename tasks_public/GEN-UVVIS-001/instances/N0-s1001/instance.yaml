@@ -1,0 +1,12 @@
+schema_version: "crucible.task_instance.v1"
+instance_id: "GEN-UVVIS-001-N0-s1001"
+template_id: "GEN-UVVIS-001"
+template_version: "1.0.0"
+condition_id: "N0"
+seed: 1001
+split: "development"
+holdout_level: "B1"
+exposure_class: "E3_PUBLIC_TEMPLATE_NEW_INSTANCE"
+created_at: "2026-08-15T00:00:00Z"
+frozen_at: null
+status: "BUILT"

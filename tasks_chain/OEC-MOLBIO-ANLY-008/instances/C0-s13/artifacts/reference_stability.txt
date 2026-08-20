@@ -1,0 +1,10 @@
+REFERENCE STABILITY PANEL  run RS-3113
+same RNA preparations and RT batch as expression plate
+
+assay     geNorm_M   control_mean_Cq   treated_mean_Cq  routine_use
+GAPDH       0.181        19.780             18.966       default
+RPLP0       0.294        20.838             20.741       alternate
+TBP         0.563        22.416             22.558       panel only
+
+Panel export: v2.7 ; means are equal-weight biological-culture means.
+Blank and no-RT controls: no amplification.

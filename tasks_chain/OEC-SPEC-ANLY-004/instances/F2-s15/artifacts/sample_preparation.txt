@@ -1,0 +1,10 @@
+SAMPLE PREPARATION RECORD   OX-1015
+Analyst: JL       source: SRC-115
+Aliquot transferred to autosampler vial; diluent added.
+Source aliquot volume:          
+Diluent volume:                 
+Final dilution factor:          
+Prepared: 2025-04-16  14:25
+Signature: JL
+
+worklist fields: matrix=solution ; DF= ; rack=B2

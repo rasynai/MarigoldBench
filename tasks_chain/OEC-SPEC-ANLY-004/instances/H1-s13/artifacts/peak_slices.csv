@@ -1,0 +1,9 @@
+run_id,sample_id,rt_offset_min,A_counts,Aplus2_counts,A_mz,Aplus2_centroid_mz
+OX-1013,SRC-113,-0.12,3110,489,427.128226,429.125246
+OX-1013,SRC-113,-0.06,8848,2008,427.128233,429.125251
+OX-1013,SRC-113,0.00,15312,4938,427.128233,429.125251
+OX-1013,SRC-113,0.06,8999,4062,427.128218,429.125250
+OX-1013,SRC-113,0.12,3181,1941,427.128216,429.125251
+
+# centroid export; counts are unsmoothed profile sums
+# RT zero is the apex assigned by the integration method

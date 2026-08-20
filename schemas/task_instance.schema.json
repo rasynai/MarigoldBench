@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "crucible/task_instance/v1",
+  "title": "CRUCIBLE Task Instance v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "instance_id", "template_id", "template_version",
+    "condition_id", "seed", "split", "holdout_level", "exposure_class", "status"
+  ],
+  "properties": {
+    "schema_version": {"const": "crucible.task_instance.v1"},
+    "instance_id": {"type": "string", "minLength": 1},
+    "template_id": {"type": "string", "pattern": "^[A-Z0-9-]+$"},
+    "template_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "condition_id": {"type": "string"},
+    "seed": {"type": "integer"},
+    "split": {"enum": ["development", "validation", "hidden_test", "sealed"]},
+    "holdout_level": {"enum": ["B0","B1","B2","B3","B4","B5","B6","B7","B8","B9"]},
+    "exposure_class": {"enum": [
+      "E0_SEALED_POST_FREEZE", "E1_PRIVATE_PREEXISTING", "E2_PUBLIC_SOURCE_HIDDEN_TASK",
+      "E3_PUBLIC_TEMPLATE_NEW_INSTANCE", "E4_PUBLIC_TASK_RETIRED", "E5_CONFIRMED_EXPOSED"
+    ]},
+    "input_bundle_hash": {"type": "string"},
+    "task_card_hash": {"type": "string"},
+    "truth_package_hash": {"type": "string"},
+    "verification_manifest_hash": {"type": "string"},
+    "resource_policy_hash": {"type": "string"},
+    "created_at": {"type": "string"},
+    "frozen_at": {"type": ["string", "null"]},
+    "status": {"enum": ["DRAFT", "BUILT", "FROZEN", "RETIRED", "RETRACTED"]}
+  }
+}

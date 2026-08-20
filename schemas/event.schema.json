@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "crucible/event/v1",
+  "title": "CRUCIBLE Event Log Record v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_id", "run_id", "timestamp_utc", "actor", "event_type"],
+  "properties": {
+    "event_id": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "timestamp_utc": {"type": "string"},
+    "actor": {"enum": ["system", "human", "evaluator", "external_service"]},
+    "event_type": {"enum": [
+      "message", "tool_call", "tool_result", "file_write", "file_delete",
+      "approval_request", "approval_decision", "fault", "checkpoint",
+      "network_request", "status_change", "registry_transition"
+    ]},
+    "parent_event_id": {"type": ["string", "null"]},
+    "payload": {"type": "object", "additionalProperties": true},
+    "payload_ref": {"type": ["string", "null"]},
+    "payload_hash": {"type": ["string", "null"]},
+    "resource_usage": {"type": "object", "additionalProperties": true},
+    "authority_context": {"type": "object", "additionalProperties": true},
+    "visibility": {"enum": ["agent", "judge", "admin"]},
+    "previous_hash": {"type": ["string", "null"]},
+    "record_hash": {"type": ["string", "null"]}
+  }
+}

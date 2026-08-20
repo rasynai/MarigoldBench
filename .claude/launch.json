@@ -1,0 +1,28 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "marigold-web",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "dashboard-prod"],
+      "port": 3000
+    },
+    {
+      "name": "landing",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "landing", "--", "--port", "3001"],
+      "port": 3001
+    },
+    {
+      "name": "marigold-workspace-branch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "A:/marigold-new/.claude/worktrees/workspace-setup-localhost-89463b/dashboard-prod"
+      ],
+      "port": 3000
+    }
+  ]
+}

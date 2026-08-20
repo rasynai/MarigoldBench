@@ -1,0 +1,11 @@
+You are the pharmacokinetic scientist reviewing the early-sampling design for study PK-433. The clinical objective is to estimate absolute oral bioavailability of the 100 mg tablet and choose the early oral sampling schedule needed for that objective.
+
+The sponsor has requested the regular early schedule shown in the attached schedule file. The pilot fraction-absorbed export, dose administration register, and analysis-plan extract are also attached. Determine whether the pilot can support the planned objective. If it can, apply the prespecified analysis exactly: select rows for the absorption fit, use verified elapsed times, fit the stated model, and derive the regular interval and number of early samples. Explain what the requested schedule can or cannot measure and state the resulting design action.
+
+The field selected_regular_interval_h means the interval actually selected after applying every grid and tiling requirement; it is not the unconstrained mathematical upper bound. The field n_rows_entering_fit means the number of rows entering a scientifically justified absorption fit after applicability and row-selection rules are applied. If the pilot or objective does not justify such a fit, use the string cannot_determine for that field and all downstream numeric fields.
+
+Finish with a machine-readable block of exactly this shape and use only the listed tokens:
+```json
+{"pilot_use_status": "<USE_VERIFIED_PILOT | USE_UNVERIFIED_PILOT | REPEAT_PILOT | OBJECTIVE_UNSUPPORTED>", "n_rows_entering_fit": <integer or "cannot_determine">, "absorption_rate_h_inv": <number or "cannot_determine">, "absorption_half_life_h": <number or "cannot_determine">, "selected_regular_interval_h": <number or "cannot_determine">, "early_phase_sample_count": <integer or "cannot_determine">, "schedule_assessment": "<ADEQUATE | INADEQUATE | PILOT_NOT_TRANSFERABLE | CANNOT_SUPPORT_OBJECTIVE>", "decision": "<KEEP_REQUESTED | REDESIGN_SCHEDULE | REPEAT_PILOT | PUSH_BACK>", "conf_pilot_use_status": <0-1>, "conf_n_rows_entering_fit": <0-1>, "conf_absorption_rate_h_inv": <0-1>, "conf_absorption_half_life_h": <0-1>, "conf_selected_regular_interval_h": <0-1>, "conf_early_phase_sample_count": <0-1>, "conf_schedule_assessment": <0-1>, "conf_decision": <0-1>}
+```
+Give a calibrated confidence in [0,1] for every field.

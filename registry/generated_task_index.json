@@ -1,0 +1,938 @@
+[
+  {
+    "template_id": "GEN-UVVIS-001",
+    "archetype": "UVVIS",
+    "instance": "N0-s1001",
+    "condition": "N0",
+    "split": "development",
+    "holdout_level": "B1",
+    "path": "tasks_public\\GEN-UVVIS-001\\instances\\N0-s1001"
+  },
+  {
+    "template_id": "GEN-UVVIS-001",
+    "archetype": "UVVIS",
+    "instance": "N1-s1002",
+    "condition": "N1",
+    "split": "development",
+    "holdout_level": "B1",
+    "path": "tasks_public\\GEN-UVVIS-001\\instances\\N1-s1002"
+  },
+  {
+    "template_id": "GEN-UVVIS-002",
+    "archetype": "UVVIS",
+    "instance": "N0-s2001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-UVVIS-002\\instances\\N0-s2001"
+  },
+  {
+    "template_id": "GEN-UVVIS-002",
+    "archetype": "UVVIS",
+    "instance": "N1-s2002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-UVVIS-002\\instances\\N1-s2002"
+  },
+  {
+    "template_id": "GEN-UVVIS-002",
+    "archetype": "UVVIS",
+    "instance": "N2-s2003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-UVVIS-002\\instances\\N2-s2003"
+  },
+  {
+    "template_id": "GEN-UVVIS-002",
+    "archetype": "UVVIS",
+    "instance": "N0-s2007",
+    "condition": "N0",
+    "split": "sealed",
+    "holdout_level": "B2",
+    "path": "tasks_sealed\\GEN-UVVIS-002\\instances\\N0-s2007"
+  },
+  {
+    "template_id": "GEN-UVVIS-003",
+    "archetype": "UVVIS",
+    "instance": "N0-s3001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-UVVIS-003\\instances\\N0-s3001"
+  },
+  {
+    "template_id": "GEN-UVVIS-003",
+    "archetype": "UVVIS",
+    "instance": "N1-s3002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-UVVIS-003\\instances\\N1-s3002"
+  },
+  {
+    "template_id": "GEN-UVVIS-003",
+    "archetype": "UVVIS",
+    "instance": "N2-s3003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-UVVIS-003\\instances\\N2-s3003"
+  },
+  {
+    "template_id": "GEN-UVVIS-003",
+    "archetype": "UVVIS",
+    "instance": "N1-s3007",
+    "condition": "N1",
+    "split": "sealed",
+    "holdout_level": "B2",
+    "path": "tasks_sealed\\GEN-UVVIS-003\\instances\\N1-s3007"
+  },
+  {
+    "template_id": "GEN-QNMR-001",
+    "archetype": "QNMR",
+    "instance": "N0-s1001",
+    "condition": "N0",
+    "split": "development",
+    "holdout_level": "B1",
+    "path": "tasks_public\\GEN-QNMR-001\\instances\\N0-s1001"
+  },
+  {
+    "template_id": "GEN-QNMR-001",
+    "archetype": "QNMR",
+    "instance": "N1-s1002",
+    "condition": "N1",
+    "split": "development",
+    "holdout_level": "B1",
+    "path": "tasks_public\\GEN-QNMR-001\\instances\\N1-s1002"
+  },
+  {
+    "template_id": "GEN-QNMR-002",
+    "archetype": "QNMR",
+    "instance": "N0-s2001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-QNMR-002\\instances\\N0-s2001"
+  },
+  {
+    "template_id": "GEN-QNMR-002",
+    "archetype": "QNMR",
+    "instance": "N1-s2002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-QNMR-002\\instances\\N1-s2002"
+  },
+  {
+    "template_id": "GEN-QNMR-002",
+    "archetype": "QNMR",
+    "instance": "N2-s2003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-QNMR-002\\instances\\N2-s2003"
+  },
+  {
+    "template_id": "GEN-QNMR-002",
+    "archetype": "QNMR",
+    "instance": "N0-s2007",
+    "condition": "N0",
+    "split": "sealed",
+    "holdout_level": "B2",
+    "path": "tasks_sealed\\GEN-QNMR-002\\instances\\N0-s2007"
+  },
+  {
+    "template_id": "GEN-QNMR-003",
+    "archetype": "QNMR",
+    "instance": "N0-s3001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-QNMR-003\\instances\\N0-s3001"
+  },
+  {
+    "template_id": "GEN-QNMR-003",
+    "archetype": "QNMR",
+    "instance": "N1-s3002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-QNMR-003\\instances\\N1-s3002"
+  },
+  {
+    "template_id": "GEN-QNMR-003",
+    "archetype": "QNMR",
+    "instance": "N2-s3003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-QNMR-003\\instances\\N2-s3003"
+  },
+  {
+    "template_id": "GEN-QNMR-003",
+    "archetype": "QNMR",
+    "instance": "N1-s3007",
+    "condition": "N1",
+    "split": "sealed",
+    "holdout_level": "B2",
+    "path": "tasks_sealed\\GEN-QNMR-003\\instances\\N1-s3007"
+  },
+  {
+    "template_id": "GEN-TITR-001",
+    "archetype": "TITR",
+    "instance": "N0-s1001",
+    "condition": "N0",
+    "split": "development",
+    "holdout_level": "B1",
+    "path": "tasks_public\\GEN-TITR-001\\instances\\N0-s1001"
+  },
+  {
+    "template_id": "GEN-TITR-001",
+    "archetype": "TITR",
+    "instance": "N1-s1002",
+    "condition": "N1",
+    "split": "development",
+    "holdout_level": "B1",
+    "path": "tasks_public\\GEN-TITR-001\\instances\\N1-s1002"
+  },
+  {
+    "template_id": "GEN-TITR-002",
+    "archetype": "TITR",
+    "instance": "N0-s2001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-TITR-002\\instances\\N0-s2001"
+  },
+  {
+    "template_id": "GEN-TITR-002",
+    "archetype": "TITR",
+    "instance": "N1-s2002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-TITR-002\\instances\\N1-s2002"
+  },
+  {
+    "template_id": "GEN-TITR-002",
+    "archetype": "TITR",
+    "instance": "N2-s2003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-TITR-002\\instances\\N2-s2003"
+  },
+  {
+    "template_id": "GEN-TITR-002",
+    "archetype": "TITR",
+    "instance": "N0-s2007",
+    "condition": "N0",
+    "split": "sealed",
+    "holdout_level": "B2",
+    "path": "tasks_sealed\\GEN-TITR-002\\instances\\N0-s2007"
+  },
+  {
+    "template_id": "GEN-TITR-003",
+    "archetype": "TITR",
+    "instance": "N0-s3001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-TITR-003\\instances\\N0-s3001"
+  },
+  {
+    "template_id": "GEN-TITR-003",
+    "archetype": "TITR",
+    "instance": "N1-s3002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-TITR-003\\instances\\N1-s3002"
+  },
+  {
+    "template_id": "GEN-TITR-003",
+    "archetype": "TITR",
+    "instance": "N2-s3003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-TITR-003\\instances\\N2-s3003"
+  },
+  {
+    "template_id": "GEN-TITR-003",
+    "archetype": "TITR",
+    "instance": "N1-s3007",
+    "condition": "N1",
+    "split": "sealed",
+    "holdout_level": "B2",
+    "path": "tasks_sealed\\GEN-TITR-003\\instances\\N1-s3007"
+  },
+  {
+    "template_id": "GEN-KIN1-001",
+    "archetype": "KIN1",
+    "instance": "N0-s1001",
+    "condition": "N0",
+    "split": "development",
+    "holdout_level": "B1",
+    "path": "tasks_public\\GEN-KIN1-001\\instances\\N0-s1001"
+  },
+  {
+    "template_id": "GEN-KIN1-001",
+    "archetype": "KIN1",
+    "instance": "N1-s1002",
+    "condition": "N1",
+    "split": "development",
+    "holdout_level": "B1",
+    "path": "tasks_public\\GEN-KIN1-001\\instances\\N1-s1002"
+  },
+  {
+    "template_id": "GEN-KIN1-002",
+    "archetype": "KIN1",
+    "instance": "N0-s2001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-KIN1-002\\instances\\N0-s2001"
+  },
+  {
+    "template_id": "GEN-KIN1-002",
+    "archetype": "KIN1",
+    "instance": "N1-s2002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-KIN1-002\\instances\\N1-s2002"
+  },
+  {
+    "template_id": "GEN-KIN1-002",
+    "archetype": "KIN1",
+    "instance": "N2-s2003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-KIN1-002\\instances\\N2-s2003"
+  },
+  {
+    "template_id": "GEN-KIN1-002",
+    "archetype": "KIN1",
+    "instance": "N0-s2007",
+    "condition": "N0",
+    "split": "sealed",
+    "holdout_level": "B2",
+    "path": "tasks_sealed\\GEN-KIN1-002\\instances\\N0-s2007"
+  },
+  {
+    "template_id": "GEN-KIN1-003",
+    "archetype": "KIN1",
+    "instance": "N0-s3001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-KIN1-003\\instances\\N0-s3001"
+  },
+  {
+    "template_id": "GEN-KIN1-003",
+    "archetype": "KIN1",
+    "instance": "N1-s3002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-KIN1-003\\instances\\N1-s3002"
+  },
+  {
+    "template_id": "GEN-KIN1-003",
+    "archetype": "KIN1",
+    "instance": "N2-s3003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-KIN1-003\\instances\\N2-s3003"
+  },
+  {
+    "template_id": "GEN-KIN1-003",
+    "archetype": "KIN1",
+    "instance": "N1-s3007",
+    "condition": "N1",
+    "split": "sealed",
+    "holdout_level": "B2",
+    "path": "tasks_sealed\\GEN-KIN1-003\\instances\\N1-s3007"
+  },
+  {
+    "template_id": "GEN-MASSBAL-001",
+    "archetype": "MASSBAL",
+    "instance": "N0-s1001",
+    "condition": "N0",
+    "split": "development",
+    "holdout_level": "B1",
+    "path": "tasks_public\\GEN-MASSBAL-001\\instances\\N0-s1001"
+  },
+  {
+    "template_id": "GEN-MASSBAL-001",
+    "archetype": "MASSBAL",
+    "instance": "N1-s1002",
+    "condition": "N1",
+    "split": "development",
+    "holdout_level": "B1",
+    "path": "tasks_public\\GEN-MASSBAL-001\\instances\\N1-s1002"
+  },
+  {
+    "template_id": "GEN-MASSBAL-002",
+    "archetype": "MASSBAL",
+    "instance": "N0-s2001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-MASSBAL-002\\instances\\N0-s2001"
+  },
+  {
+    "template_id": "GEN-MASSBAL-002",
+    "archetype": "MASSBAL",
+    "instance": "N1-s2002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-MASSBAL-002\\instances\\N1-s2002"
+  },
+  {
+    "template_id": "GEN-MASSBAL-002",
+    "archetype": "MASSBAL",
+    "instance": "N2-s2003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-MASSBAL-002\\instances\\N2-s2003"
+  },
+  {
+    "template_id": "GEN-MASSBAL-002",
+    "archetype": "MASSBAL",
+    "instance": "N0-s2007",
+    "condition": "N0",
+    "split": "sealed",
+    "holdout_level": "B2",
+    "path": "tasks_sealed\\GEN-MASSBAL-002\\instances\\N0-s2007"
+  },
+  {
+    "template_id": "GEN-MASSBAL-003",
+    "archetype": "MASSBAL",
+    "instance": "N0-s3001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-MASSBAL-003\\instances\\N0-s3001"
+  },
+  {
+    "template_id": "GEN-MASSBAL-003",
+    "archetype": "MASSBAL",
+    "instance": "N1-s3002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-MASSBAL-003\\instances\\N1-s3002"
+  },
+  {
+    "template_id": "GEN-MASSBAL-003",
+    "archetype": "MASSBAL",
+    "instance": "N2-s3003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-MASSBAL-003\\instances\\N2-s3003"
+  },
+  {
+    "template_id": "GEN-MASSBAL-003",
+    "archetype": "MASSBAL",
+    "instance": "N1-s3007",
+    "condition": "N1",
+    "split": "sealed",
+    "holdout_level": "B2",
+    "path": "tasks_sealed\\GEN-MASSBAL-003\\instances\\N1-s3007"
+  },
+  {
+    "template_id": "GEN-STOICH-001",
+    "archetype": "STOICH",
+    "instance": "N0-s1001",
+    "condition": "N0",
+    "split": "development",
+    "holdout_level": "B1",
+    "path": "tasks_public\\GEN-STOICH-001\\instances\\N0-s1001"
+  },
+  {
+    "template_id": "GEN-STOICH-001",
+    "archetype": "STOICH",
+    "instance": "N1-s1002",
+    "condition": "N1",
+    "split": "development",
+    "holdout_level": "B1",
+    "path": "tasks_public\\GEN-STOICH-001\\instances\\N1-s1002"
+  },
+  {
+    "template_id": "GEN-STOICH-002",
+    "archetype": "STOICH",
+    "instance": "N0-s2001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-STOICH-002\\instances\\N0-s2001"
+  },
+  {
+    "template_id": "GEN-STOICH-002",
+    "archetype": "STOICH",
+    "instance": "N1-s2002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-STOICH-002\\instances\\N1-s2002"
+  },
+  {
+    "template_id": "GEN-STOICH-002",
+    "archetype": "STOICH",
+    "instance": "N2-s2003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-STOICH-002\\instances\\N2-s2003"
+  },
+  {
+    "template_id": "GEN-STOICH-002",
+    "archetype": "STOICH",
+    "instance": "N0-s2007",
+    "condition": "N0",
+    "split": "sealed",
+    "holdout_level": "B2",
+    "path": "tasks_sealed\\GEN-STOICH-002\\instances\\N0-s2007"
+  },
+  {
+    "template_id": "GEN-STOICH-003",
+    "archetype": "STOICH",
+    "instance": "N0-s3001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-STOICH-003\\instances\\N0-s3001"
+  },
+  {
+    "template_id": "GEN-STOICH-003",
+    "archetype": "STOICH",
+    "instance": "N1-s3002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-STOICH-003\\instances\\N1-s3002"
+  },
+  {
+    "template_id": "GEN-STOICH-003",
+    "archetype": "STOICH",
+    "instance": "N2-s3003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-STOICH-003\\instances\\N2-s3003"
+  },
+  {
+    "template_id": "GEN-STOICH-003",
+    "archetype": "STOICH",
+    "instance": "N1-s3007",
+    "condition": "N1",
+    "split": "sealed",
+    "holdout_level": "B2",
+    "path": "tasks_sealed\\GEN-STOICH-003\\instances\\N1-s3007"
+  },
+  {
+    "template_id": "GEN-STDADD-001",
+    "archetype": "STDADD",
+    "instance": "N0-s1001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-STDADD-001\\instances\\N0-s1001"
+  },
+  {
+    "template_id": "GEN-STDADD-001",
+    "archetype": "STDADD",
+    "instance": "N1-s1002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-STDADD-001\\instances\\N1-s1002"
+  },
+  {
+    "template_id": "GEN-STDADD-001",
+    "archetype": "STDADD",
+    "instance": "N2-s1003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-STDADD-001\\instances\\N2-s1003"
+  },
+  {
+    "template_id": "GEN-STDADD-001",
+    "archetype": "STDADD",
+    "instance": "N0-s1007",
+    "condition": "N0",
+    "split": "sealed",
+    "holdout_level": "B7",
+    "path": "tasks_sealed\\GEN-STDADD-001\\instances\\N0-s1007"
+  },
+  {
+    "template_id": "GEN-STDADD-002",
+    "archetype": "STDADD",
+    "instance": "N0-s2001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-STDADD-002\\instances\\N0-s2001"
+  },
+  {
+    "template_id": "GEN-STDADD-002",
+    "archetype": "STDADD",
+    "instance": "N1-s2002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-STDADD-002\\instances\\N1-s2002"
+  },
+  {
+    "template_id": "GEN-STDADD-002",
+    "archetype": "STDADD",
+    "instance": "N2-s2003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-STDADD-002\\instances\\N2-s2003"
+  },
+  {
+    "template_id": "GEN-STDADD-002",
+    "archetype": "STDADD",
+    "instance": "N0-s2007",
+    "condition": "N0",
+    "split": "sealed",
+    "holdout_level": "B7",
+    "path": "tasks_sealed\\GEN-STDADD-002\\instances\\N0-s2007"
+  },
+  {
+    "template_id": "GEN-STDADD-003",
+    "archetype": "STDADD",
+    "instance": "N0-s3001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-STDADD-003\\instances\\N0-s3001"
+  },
+  {
+    "template_id": "GEN-STDADD-003",
+    "archetype": "STDADD",
+    "instance": "N1-s3002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-STDADD-003\\instances\\N1-s3002"
+  },
+  {
+    "template_id": "GEN-STDADD-003",
+    "archetype": "STDADD",
+    "instance": "N2-s3003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-STDADD-003\\instances\\N2-s3003"
+  },
+  {
+    "template_id": "GEN-STDADD-003",
+    "archetype": "STDADD",
+    "instance": "N1-s3007",
+    "condition": "N1",
+    "split": "sealed",
+    "holdout_level": "B7",
+    "path": "tasks_sealed\\GEN-STDADD-003\\instances\\N1-s3007"
+  },
+  {
+    "template_id": "GEN-MELT-001",
+    "archetype": "MELT",
+    "instance": "N0-s1001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-MELT-001\\instances\\N0-s1001"
+  },
+  {
+    "template_id": "GEN-MELT-001",
+    "archetype": "MELT",
+    "instance": "N1-s1002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-MELT-001\\instances\\N1-s1002"
+  },
+  {
+    "template_id": "GEN-MELT-001",
+    "archetype": "MELT",
+    "instance": "N2-s1003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-MELT-001\\instances\\N2-s1003"
+  },
+  {
+    "template_id": "GEN-MELT-001",
+    "archetype": "MELT",
+    "instance": "N0-s1007",
+    "condition": "N0",
+    "split": "sealed",
+    "holdout_level": "B7",
+    "path": "tasks_sealed\\GEN-MELT-001\\instances\\N0-s1007"
+  },
+  {
+    "template_id": "GEN-MELT-002",
+    "archetype": "MELT",
+    "instance": "N0-s2001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-MELT-002\\instances\\N0-s2001"
+  },
+  {
+    "template_id": "GEN-MELT-002",
+    "archetype": "MELT",
+    "instance": "N1-s2002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-MELT-002\\instances\\N1-s2002"
+  },
+  {
+    "template_id": "GEN-MELT-002",
+    "archetype": "MELT",
+    "instance": "N2-s2003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-MELT-002\\instances\\N2-s2003"
+  },
+  {
+    "template_id": "GEN-MELT-002",
+    "archetype": "MELT",
+    "instance": "N0-s2007",
+    "condition": "N0",
+    "split": "sealed",
+    "holdout_level": "B7",
+    "path": "tasks_sealed\\GEN-MELT-002\\instances\\N0-s2007"
+  },
+  {
+    "template_id": "GEN-MELT-003",
+    "archetype": "MELT",
+    "instance": "N0-s3001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-MELT-003\\instances\\N0-s3001"
+  },
+  {
+    "template_id": "GEN-MELT-003",
+    "archetype": "MELT",
+    "instance": "N1-s3002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-MELT-003\\instances\\N1-s3002"
+  },
+  {
+    "template_id": "GEN-MELT-003",
+    "archetype": "MELT",
+    "instance": "N2-s3003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B7",
+    "path": "tasks_public\\GEN-MELT-003\\instances\\N2-s3003"
+  },
+  {
+    "template_id": "GEN-MELT-003",
+    "archetype": "MELT",
+    "instance": "N1-s3007",
+    "condition": "N1",
+    "split": "sealed",
+    "holdout_level": "B7",
+    "path": "tasks_sealed\\GEN-MELT-003\\instances\\N1-s3007"
+  },
+  {
+    "template_id": "GEN-LOGAUDIT-001",
+    "archetype": "LOGAUDIT",
+    "instance": "N0-s1001",
+    "condition": "N0",
+    "split": "development",
+    "holdout_level": "B1",
+    "path": "tasks_public\\GEN-LOGAUDIT-001\\instances\\N0-s1001"
+  },
+  {
+    "template_id": "GEN-LOGAUDIT-001",
+    "archetype": "LOGAUDIT",
+    "instance": "N1-s1002",
+    "condition": "N1",
+    "split": "development",
+    "holdout_level": "B1",
+    "path": "tasks_public\\GEN-LOGAUDIT-001\\instances\\N1-s1002"
+  },
+  {
+    "template_id": "GEN-LOGAUDIT-002",
+    "archetype": "LOGAUDIT",
+    "instance": "N0-s2001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-LOGAUDIT-002\\instances\\N0-s2001"
+  },
+  {
+    "template_id": "GEN-LOGAUDIT-002",
+    "archetype": "LOGAUDIT",
+    "instance": "N1-s2002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-LOGAUDIT-002\\instances\\N1-s2002"
+  },
+  {
+    "template_id": "GEN-LOGAUDIT-002",
+    "archetype": "LOGAUDIT",
+    "instance": "N2-s2003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-LOGAUDIT-002\\instances\\N2-s2003"
+  },
+  {
+    "template_id": "GEN-LOGAUDIT-002",
+    "archetype": "LOGAUDIT",
+    "instance": "N0-s2007",
+    "condition": "N0",
+    "split": "sealed",
+    "holdout_level": "B2",
+    "path": "tasks_sealed\\GEN-LOGAUDIT-002\\instances\\N0-s2007"
+  },
+  {
+    "template_id": "GEN-LOGAUDIT-003",
+    "archetype": "LOGAUDIT",
+    "instance": "N0-s3001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-LOGAUDIT-003\\instances\\N0-s3001"
+  },
+  {
+    "template_id": "GEN-LOGAUDIT-003",
+    "archetype": "LOGAUDIT",
+    "instance": "N1-s3002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-LOGAUDIT-003\\instances\\N1-s3002"
+  },
+  {
+    "template_id": "GEN-LOGAUDIT-003",
+    "archetype": "LOGAUDIT",
+    "instance": "N2-s3003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-LOGAUDIT-003\\instances\\N2-s3003"
+  },
+  {
+    "template_id": "GEN-LOGAUDIT-003",
+    "archetype": "LOGAUDIT",
+    "instance": "N1-s3007",
+    "condition": "N1",
+    "split": "sealed",
+    "holdout_level": "B2",
+    "path": "tasks_sealed\\GEN-LOGAUDIT-003\\instances\\N1-s3007"
+  },
+  {
+    "template_id": "GEN-LCIS-001",
+    "archetype": "LCIS",
+    "instance": "N0-s1001",
+    "condition": "N0",
+    "split": "development",
+    "holdout_level": "B1",
+    "path": "tasks_public\\GEN-LCIS-001\\instances\\N0-s1001"
+  },
+  {
+    "template_id": "GEN-LCIS-001",
+    "archetype": "LCIS",
+    "instance": "N1-s1002",
+    "condition": "N1",
+    "split": "development",
+    "holdout_level": "B1",
+    "path": "tasks_public\\GEN-LCIS-001\\instances\\N1-s1002"
+  },
+  {
+    "template_id": "GEN-LCIS-002",
+    "archetype": "LCIS",
+    "instance": "N0-s2001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-LCIS-002\\instances\\N0-s2001"
+  },
+  {
+    "template_id": "GEN-LCIS-002",
+    "archetype": "LCIS",
+    "instance": "N1-s2002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-LCIS-002\\instances\\N1-s2002"
+  },
+  {
+    "template_id": "GEN-LCIS-002",
+    "archetype": "LCIS",
+    "instance": "N2-s2003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-LCIS-002\\instances\\N2-s2003"
+  },
+  {
+    "template_id": "GEN-LCIS-002",
+    "archetype": "LCIS",
+    "instance": "N0-s2007",
+    "condition": "N0",
+    "split": "sealed",
+    "holdout_level": "B2",
+    "path": "tasks_sealed\\GEN-LCIS-002\\instances\\N0-s2007"
+  },
+  {
+    "template_id": "GEN-LCIS-003",
+    "archetype": "LCIS",
+    "instance": "N0-s3001",
+    "condition": "N0",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-LCIS-003\\instances\\N0-s3001"
+  },
+  {
+    "template_id": "GEN-LCIS-003",
+    "archetype": "LCIS",
+    "instance": "N1-s3002",
+    "condition": "N1",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-LCIS-003\\instances\\N1-s3002"
+  },
+  {
+    "template_id": "GEN-LCIS-003",
+    "archetype": "LCIS",
+    "instance": "N2-s3003",
+    "condition": "N2",
+    "split": "hidden_test",
+    "holdout_level": "B2",
+    "path": "tasks_public\\GEN-LCIS-003\\instances\\N2-s3003"
+  },
+  {
+    "template_id": "GEN-LCIS-003",
+    "archetype": "LCIS",
+    "instance": "N1-s3007",
+    "condition": "N1",
+    "split": "sealed",
+    "holdout_level": "B2",
+    "path": "tasks_sealed\\GEN-LCIS-003\\instances\\N1-s3007"
+  }
+]

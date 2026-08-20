@@ -1,0 +1,10 @@
+SAMPLE PREPARATION RECORD   OX-1011
+Analyst: JL       source: SRC-111
+Aliquot transferred to autosampler vial; diluent added.
+Source aliquot volume:          
+Diluent volume:                 
+Final dilution factor:          
+Prepared: 2025-12-12  14:21
+Signature: JL
+
+worklist fields: matrix=solution ; DF= ; rack=B2

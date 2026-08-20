@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "crucible/system_card/v1",
+  "title": "CRUCIBLE System Configuration Card v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "system_id", "system_name", "condition", "version", "snapshot_date", "resource_policy"],
+  "properties": {
+    "schema_version": {"const": "crucible.system_card.v1"},
+    "system_id": {"type": "string", "minLength": 1},
+    "system_name": {"type": "string", "minLength": 1},
+    "condition": {"enum": ["native_product", "reference_agent", "baseline", "controlled_variant"]},
+    "version": {"type": "string", "minLength": 1},
+    "snapshot_date": {"type": "string"},
+    "account_tier": {"type": "string"},
+    "model_routing": {"type": "string"},
+    "base_model": {"type": ["string", "null"]},
+    "enabled_tools": {"type": "array", "items": {"type": "string"}},
+    "tool_list_hash": {"type": ["string", "null"]},
+    "execution": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "local_connected_machine": {"type": "boolean"},
+        "hosted_endpoints": {"type": "boolean"}
+      }
+    },
+    "memory": {"type": "object", "additionalProperties": true},
+    "authority": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "default_mode": {"type": "string"}
+      }
+    },
+    "network_mode": {"enum": ["OFFLINE", "CONTROLLED_LITERATURE", "ALLOWLISTED_SERVICES", "FULL_WEB_LOGGED", "NATIVE_PRODUCT_NETWORK"]},
+    "resource_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["wall_clock_minutes"],
+      "properties": {
+        "wall_clock_minutes": {"type": "number", "exclusiveMinimum": 0},
+        "max_tokens": {"type": ["integer", "null"]},
+        "max_model_calls": {"type": ["integer", "null"]},
+        "max_cost_usd": {"type": ["number", "null"]},
+        "cpu_core_hours": {"type": ["number", "null"]},
+        "gpu_hours": {"type": ["number", "null"]},
+        "concurrency": {"type": ["integer", "null"]},
+        "retry_policy": {"type": "string"},
+        "human_intervention_policy": {"type": "string"}
+      }
+    },
+    "adapter_version": {"type": ["string", "null"]},
+    "provider_involvement": {"type": "string"},
+    "known_limitations": {"type": "array", "items": {"type": "string"}},
+    "data_policy": {"type": "string"}
+  }
+}

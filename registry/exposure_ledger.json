@@ -1,0 +1,57 @@
+[
+  {
+    "instance_id": "CHEM-LC-CAL-001-N0-s101",
+    "template_id": "CHEM-LC-CAL-001",
+    "holdout_level": "B0",
+    "exposure_class": "E3_PUBLIC_TEMPLATE_NEW_INSTANCE",
+    "split": "development",
+    "source_public": false,
+    "task_text_public": true,
+    "truth_public": true,
+    "note": "Synthetic construction; whole repository is local, so all instances are at best E3 once evaluated systems' vendors could ever see them. Sealed cohorts require new instances created after a system freeze."
+  },
+  {
+    "instance_id": "CHEM-LC-CAL-001-N0-s103",
+    "template_id": "CHEM-LC-CAL-001",
+    "holdout_level": "B1",
+    "exposure_class": "E3_PUBLIC_TEMPLATE_NEW_INSTANCE",
+    "split": "hidden_test",
+    "source_public": false,
+    "task_text_public": true,
+    "truth_public": true,
+    "note": "Synthetic construction; whole repository is local, so all instances are at best E3 once evaluated systems' vendors could ever see them. Sealed cohorts require new instances created after a system freeze."
+  },
+  {
+    "instance_id": "CHEM-LC-CAL-001-N1-s102",
+    "template_id": "CHEM-LC-CAL-001",
+    "holdout_level": "B0",
+    "exposure_class": "E3_PUBLIC_TEMPLATE_NEW_INSTANCE",
+    "split": "development",
+    "source_public": false,
+    "task_text_public": true,
+    "truth_public": true,
+    "note": "Synthetic construction; whole repository is local, so all instances are at best E3 once evaluated systems' vendors could ever see them. Sealed cohorts require new instances created after a system freeze."
+  },
+  {
+    "instance_id": "CHEM-LC-CAL-002-N2-s104",
+    "template_id": "CHEM-LC-CAL-002",
+    "holdout_level": "B2",
+    "exposure_class": "E3_PUBLIC_TEMPLATE_NEW_INSTANCE",
+    "split": "hidden_test",
+    "source_public": false,
+    "task_text_public": true,
+    "truth_public": true,
+    "note": "Synthetic construction; whole repository is local, so all instances are at best E3 once evaluated systems' vendors could ever see them. Sealed cohorts require new instances created after a system freeze."
+  },
+  {
+    "instance_id": "OPS-AUTH-001-S1-s201",
+    "template_id": "OPS-AUTH-001",
+    "holdout_level": "B0",
+    "exposure_class": "E3_PUBLIC_TEMPLATE_NEW_INSTANCE",
+    "split": "development",
+    "source_public": false,
+    "task_text_public": true,
+    "truth_public": true,
+    "note": "Synthetic construction; whole repository is local, so all instances are at best E3 once evaluated systems' vendors could ever see them. Sealed cohorts require new instances created after a system freeze."
+  }
+]

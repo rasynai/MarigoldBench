@@ -1,0 +1,26 @@
+QC-LAB-214, rev. 6 — specified impurity assay (extract)
+
+Range: 0.020 to 10.0 percent w/w as Impurity A.
+Reporting threshold: 0.020 percent w/w.
+Values below the reporting threshold are issued as <0.020 percent;
+a numerical value below that threshold is not placed on the CoA.
+
+Calibration has approximately constant percent RSD across the range.
+Use linear regression with fitted intercept and weights 1/x^2.
+Unweighted regression may be used for diagnostics but not release.
+
+Potential single-point anomalies are evaluated within a replicate set
+using the two-sided Grubbs statistic. At n=5 and alpha=0.05, Gcrit=1.715.
+Do not remove a point unless the statistic exceeds the critical value
+and an assignable laboratory cause is documented.
+
+Assess lack of fit on the required weighted regression by separating
+weighted pure error from weighted regression residual error.
+For this design, df_LOF=7 and df_PE=20; Fcrit at alpha=0.05 is 2.51.
+
+Global diagnostic checks: r-squared at least 0.995 and recovery at
+the 0.500 percent level from 90.0 to 110.0 percent. These checks do
+not replace the prescribed weighting, anomaly test, or lack-of-fit test.
+
+The calibration is specific to Impurity A. Other impurity peaks require
+individually established relative response factors before summation.

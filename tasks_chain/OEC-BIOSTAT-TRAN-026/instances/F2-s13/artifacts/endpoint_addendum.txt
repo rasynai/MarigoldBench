@@ -1,0 +1,13 @@
+ENDPOINT COMMITTEE ADDENDUM   SR-4113
+Review set: source packets received after database extract
+
+interval,displayed_as_relapse,reclassified_to_death_without_prior_relapse
+1,2,0
+2,2,0
+3,5,0
+4,7,0
+5,8,0
+
+Committee review upheld the displayed classifications. No death
+record had a documented relapse before death, and no displayed
+relapse was reassigned. Risk-set totals are unchanged.

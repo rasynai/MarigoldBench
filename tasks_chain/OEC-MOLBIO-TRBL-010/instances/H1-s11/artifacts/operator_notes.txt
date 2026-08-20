@@ -1,0 +1,9 @@
+RUN NOTES / NR-2411 / operator ML
+-----------------------------------------------
+00:00  Cells and reporter mix dispensed at 50 uL nominal.
+00:14  Compound transfer complete; map initialled ML.
+00:22  Plate sealed and moved to incubator bay 3.
+Incubator RH log, final 6 h: 43-46 percent
+17:58  On removal, clear seal had a narrow lift along A6-A11; pressed flat before the endpoint read.
+18:06  Read completed. Positive control responded; vehicle CV 7.1 percent.
+18:15  Export copied to analysis share.   initials: ML

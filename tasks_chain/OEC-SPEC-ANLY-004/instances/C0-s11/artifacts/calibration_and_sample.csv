@@ -1,0 +1,14 @@
+level_nM,diag_product_response_ratio,Aplus2_window_response_ratio,inj
+0.25, 0.46828,0.14575,1
+0.50, 0.91836,0.27284,2
+1.00, 1.82626,0.55550,3
+2.00, 3.53413,1.14839,4
+5.00, 9.06513,2.70178,5
+10.00, 18.08887,5.55213,6
+20.00, 35.71113,11.14852,7
+
+sample_id,diag_product_response_ratio,Aplus2_window_response_ratio,inj
+SRC-111,1.30681, 0.58124,9
+
+# response ratio = analyte area / labelled internal-standard area
+# blank and zero-standard rows omitted from this export

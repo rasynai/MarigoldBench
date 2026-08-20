@@ -1,0 +1,9 @@
+REQUESTED EARLY PK SCHEDULE
+Protocol synopsis rev 5
+
+Window: dose through 1.50 h
+Requested draws (h): 0, 0.25, 0.50, 0.75, 1.00, 1.25, 1.50
+Later PK draws: 2, 3, 4, 6, 8, 12, 24 h
+
+Operational note: early draws assigned to one phlebotomy team.
+Treatment arm: oral TAB-IR 100 mg

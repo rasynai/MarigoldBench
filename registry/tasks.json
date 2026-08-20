@@ -1,0 +1,3137 @@
+{
+  "CHEM-LC-CAL-001": {
+    "history": [
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T01:27:03.974050+00:00",
+        "from": "NOMINATED",
+        "reason": "prototype triage",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:20.685229+00:00",
+        "from": "TRIAGED",
+        "reason": "construction gate: RIGHTS_CLEARED (task packet + tests)",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:21.102466+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "construction gate: SCIENCE_SCREENED (task packet + tests)",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:21.501426+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "construction gate: DATA_VERIFIED (task packet + tests)",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:21.875428+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "construction gate: TASK_FRAMED (task packet + tests)",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:22.269800+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "construction gate: TRUTH_REGIME_ASSIGNED (task packet + tests)",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:22.677732+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "construction gate: CONSTRUCT_REVIEWED (task packet + tests)",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:23.077503+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "construction gate: BUILT (task packet + tests)",
+        "to": "BUILT"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T04:14:45.916509+00:00",
+        "from": "BUILT",
+        "reason": "campaign release-0.2.0 evidence: truth/independent_reviews, runs/release-0.2.0/shortcuts, agent_outcomes, scorecard",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T04:14:46.104961+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "campaign release-0.2.0 evidence: truth/independent_reviews, runs/release-0.2.0/shortcuts, agent_outcomes, scorecard",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T04:14:46.314700+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "campaign release-0.2.0 evidence: truth/independent_reviews, runs/release-0.2.0/shortcuts, agent_outcomes, scorecard",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T04:14:46.511463+00:00",
+        "from": "PILOTED",
+        "reason": "campaign release-0.2.0 evidence: truth/independent_reviews, runs/release-0.2.0/shortcuts, agent_outcomes, scorecard",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "A",
+    "registered_at": "2026-08-15T01:27:03.485149+00:00",
+    "source_cluster_id": "cluster-prototype-synthetic-lc-001",
+    "status": "ADMITTED",
+    "template_id": "CHEM-LC-CAL-001",
+    "template_path": "tasks_public\\CHEM-LC-CAL-001\\template.yaml",
+    "version": "0.1.0"
+  },
+  "CHEM-LC-CAL-002": {
+    "history": [
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:18.893810+00:00",
+        "from": "NOMINATED",
+        "reason": "synthetic construction pipeline: TRIAGED gate evidence in task packet",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:19.107648+00:00",
+        "from": "TRIAGED",
+        "reason": "synthetic construction pipeline: RIGHTS_CLEARED gate evidence in task packet",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:19.334898+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "synthetic construction pipeline: SCIENCE_SCREENED gate evidence in task packet",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:19.569478+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "synthetic construction pipeline: DATA_VERIFIED gate evidence in task packet",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:19.842508+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "synthetic construction pipeline: TASK_FRAMED gate evidence in task packet",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:20.039563+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "synthetic construction pipeline: TRUTH_REGIME_ASSIGNED gate evidence in task packet",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:20.242936+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "synthetic construction pipeline: CONSTRUCT_REVIEWED gate evidence in task packet",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:20.473502+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "synthetic construction pipeline: BUILT gate evidence in task packet",
+        "to": "BUILT"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T04:14:46.724799+00:00",
+        "from": "BUILT",
+        "reason": "campaign release-0.2.0 evidence: truth/independent_reviews, runs/release-0.2.0/shortcuts, agent_outcomes, scorecard",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T04:14:46.920341+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "campaign release-0.2.0 evidence: truth/independent_reviews, runs/release-0.2.0/shortcuts, agent_outcomes, scorecard",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T04:14:47.134330+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "campaign release-0.2.0 evidence: truth/independent_reviews, runs/release-0.2.0/shortcuts, agent_outcomes, scorecard",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T04:14:47.320452+00:00",
+        "from": "PILOTED",
+        "reason": "campaign release-0.2.0 evidence: truth/independent_reviews, runs/release-0.2.0/shortcuts, agent_outcomes, scorecard",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T02:02:18.630402+00:00",
+    "source_cluster_id": "cluster-prototype-synthetic-lc-001",
+    "status": "ADMITTED",
+    "template_id": "CHEM-LC-CAL-002",
+    "template_path": "tasks_public\\CHEM-LC-CAL-002\\template.yaml",
+    "version": "0.1.0"
+  },
+  "GEN-KIN1-001": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.147608+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.159892+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.183350+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.215320+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.255166+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.296717+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.331009+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.379619+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.420064+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.459938+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.501203+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.540413+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:09.121189+00:00",
+    "source_cluster_id": "archetype-kin1",
+    "status": "ADMITTED",
+    "template_id": "GEN-KIN1-001",
+    "template_path": "tasks_public\\GEN-KIN1-001\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-KIN1-002": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.628562+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.667938+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.716485+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.754380+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.766582+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.797805+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.836531+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.885572+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.924223+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:09.962491+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.001388+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.043035+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:09.590677+00:00",
+    "source_cluster_id": "archetype-kin1",
+    "status": "ADMITTED",
+    "template_id": "GEN-KIN1-002",
+    "template_path": "tasks_public\\GEN-KIN1-002\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-KIN1-003": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.131739+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.165135+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.213162+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.227041+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.238068+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.254013+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.282547+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.324306+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.338413+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.350968+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.396956+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.431528+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:10.093852+00:00",
+    "source_cluster_id": "archetype-kin1",
+    "status": "ADMITTED",
+    "template_id": "GEN-KIN1-003",
+    "template_path": "tasks_public\\GEN-KIN1-003\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-LCIS-001": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.480747+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.504202+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.528317+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.575564+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.613121+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.660108+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.698338+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.735638+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.782265+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.815230+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.841447+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.871342+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:10.452089+00:00",
+    "source_cluster_id": "archetype-lcis",
+    "status": "ADMITTED",
+    "template_id": "GEN-LCIS-001",
+    "template_path": "tasks_public\\GEN-LCIS-001\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-LCIS-002": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.944434+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:10.983433+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.022148+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.064572+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.105966+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.149506+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.186375+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.230068+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.262929+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.305060+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.336093+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.359159+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:10.898313+00:00",
+    "source_cluster_id": "archetype-lcis",
+    "status": "ADMITTED",
+    "template_id": "GEN-LCIS-002",
+    "template_path": "tasks_public\\GEN-LCIS-002\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-LCIS-003": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.412522+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.458919+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.490934+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.536061+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.563559+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.609452+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.655287+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.689395+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.721040+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.765956+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.806550+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.850476+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:11.395920+00:00",
+    "source_cluster_id": "archetype-lcis",
+    "status": "ADMITTED",
+    "template_id": "GEN-LCIS-003",
+    "template_path": "tasks_public\\GEN-LCIS-003\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-LOGAUDIT-001": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.924330+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.953163+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:11.979691+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.004927+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.018281+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.044177+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.060470+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.082984+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.096374+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.128100+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.169570+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.212352+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:11.898713+00:00",
+    "source_cluster_id": "archetype-logaudit",
+    "status": "ADMITTED",
+    "template_id": "GEN-LOGAUDIT-001",
+    "template_path": "tasks_public\\GEN-LOGAUDIT-001\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-LOGAUDIT-002": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.308610+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.349346+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.395175+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.441948+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.482038+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.524284+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.565444+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.617004+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.655163+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.696622+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.741222+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.782516+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:12.262736+00:00",
+    "source_cluster_id": "archetype-logaudit",
+    "status": "ADMITTED",
+    "template_id": "GEN-LOGAUDIT-002",
+    "template_path": "tasks_public\\GEN-LOGAUDIT-002\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-LOGAUDIT-003": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.874594+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.920354+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:12.968155+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.012054+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.060370+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.085401+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.098905+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.125977+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.154766+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.195248+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.239426+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.284422+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:12.831710+00:00",
+    "source_cluster_id": "archetype-logaudit",
+    "status": "ADMITTED",
+    "template_id": "GEN-LOGAUDIT-003",
+    "template_path": "tasks_public\\GEN-LOGAUDIT-003\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-MASSBAL-001": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.376451+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.415674+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.459226+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.506923+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.551352+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.598138+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.641864+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.681906+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.728830+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.775916+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.818417+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.867274+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:13.335194+00:00",
+    "source_cluster_id": "archetype-massbal",
+    "status": "ADMITTED",
+    "template_id": "GEN-MASSBAL-001",
+    "template_path": "tasks_public\\GEN-MASSBAL-001\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-MASSBAL-002": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.911401+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.937134+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.961597+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:13.976461+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.004356+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.021417+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.037549+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.069513+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.102334+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.147027+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.164075+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.192616+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:13.887996+00:00",
+    "source_cluster_id": "archetype-massbal",
+    "status": "ADMITTED",
+    "template_id": "GEN-MASSBAL-002",
+    "template_path": "tasks_public\\GEN-MASSBAL-002\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-MASSBAL-003": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.243952+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.280302+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.326187+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.369247+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.411395+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.455253+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.499084+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.540765+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.580493+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.623252+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.670981+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.712771+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:14.217940+00:00",
+    "source_cluster_id": "archetype-massbal",
+    "status": "ADMITTED",
+    "template_id": "GEN-MASSBAL-003",
+    "template_path": "tasks_public\\GEN-MASSBAL-003\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-MELT-001": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.811864+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.830255+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.847273+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.875413+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.920843+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.966403+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:14.993479+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.017917+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.034318+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.054294+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.091753+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.140654+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:14.767606+00:00",
+    "source_cluster_id": "archetype-melt",
+    "status": "ADMITTED",
+    "template_id": "GEN-MELT-001",
+    "template_path": "tasks_public\\GEN-MELT-001\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-MELT-002": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.225585+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.266441+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.300528+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.323831+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.346366+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.372548+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.396365+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.422267+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.452268+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.490516+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.537477+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.577452+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:15.188444+00:00",
+    "source_cluster_id": "archetype-melt",
+    "status": "ADMITTED",
+    "template_id": "GEN-MELT-002",
+    "template_path": "tasks_public\\GEN-MELT-002\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-MELT-003": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.636451+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.664058+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.686437+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.721142+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.761486+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.805941+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.851967+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.897526+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.938619+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:15.986414+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.024471+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.061898+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:15.611260+00:00",
+    "source_cluster_id": "archetype-melt",
+    "status": "ADMITTED",
+    "template_id": "GEN-MELT-003",
+    "template_path": "tasks_public\\GEN-MELT-003\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-QNMR-001": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.154734+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.198445+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.240527+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.283135+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.327462+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.371204+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.415938+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.462013+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.508617+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.557153+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.603037+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.648198+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:16.107525+00:00",
+    "source_cluster_id": "archetype-qnmr",
+    "status": "ADMITTED",
+    "template_id": "GEN-QNMR-001",
+    "template_path": "tasks_public\\GEN-QNMR-001\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-QNMR-002": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.708595+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.741415+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.775100+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.789193+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.813592+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.831865+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.859470+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.909844+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.954758+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:16.998068+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.044361+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.089963+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:16.666987+00:00",
+    "source_cluster_id": "archetype-qnmr",
+    "status": "ADMITTED",
+    "template_id": "GEN-QNMR-002",
+    "template_path": "tasks_public\\GEN-QNMR-002\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-QNMR-003": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.185216+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.225110+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.263110+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.305269+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.345817+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.384566+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.426211+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.473336+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.519644+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.567257+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.607037+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.652294+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:17.140038+00:00",
+    "source_cluster_id": "archetype-qnmr",
+    "status": "ADMITTED",
+    "template_id": "GEN-QNMR-003",
+    "template_path": "tasks_public\\GEN-QNMR-003\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-STDADD-001": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.743377+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.783811+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.831022+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.876680+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.917527+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:17.962200+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.008034+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.047400+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.083429+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.130045+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.172686+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.212269+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:17.694177+00:00",
+    "source_cluster_id": "archetype-stdadd",
+    "status": "ADMITTED",
+    "template_id": "GEN-STDADD-001",
+    "template_path": "tasks_public\\GEN-STDADD-001\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-STDADD-002": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.301808+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.347017+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.391712+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.437234+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.480645+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.525215+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.571710+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.614519+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.632647+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.650531+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.676326+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.722447+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:18.265794+00:00",
+    "source_cluster_id": "archetype-stdadd",
+    "status": "ADMITTED",
+    "template_id": "GEN-STDADD-002",
+    "template_path": "tasks_public\\GEN-STDADD-002\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-STDADD-003": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.818483+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.863666+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.907055+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:18.957676+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.000672+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.042976+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.092240+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.125528+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.171362+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.213203+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.252079+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.296967+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:18.772793+00:00",
+    "source_cluster_id": "archetype-stdadd",
+    "status": "ADMITTED",
+    "template_id": "GEN-STDADD-003",
+    "template_path": "tasks_public\\GEN-STDADD-003\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-STOICH-001": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.388653+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.444324+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.484856+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.526519+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.577137+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.616011+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.644955+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.661779+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.692895+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.744208+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.785918+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.834714+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:19.346774+00:00",
+    "source_cluster_id": "archetype-stoich",
+    "status": "ADMITTED",
+    "template_id": "GEN-STOICH-001",
+    "template_path": "tasks_public\\GEN-STOICH-001\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-STOICH-002": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.930676+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:19.971568+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.015774+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.059700+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.103196+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.148012+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.195140+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.234058+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.283893+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.327266+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.363083+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.406479+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:19.883507+00:00",
+    "source_cluster_id": "archetype-stoich",
+    "status": "ADMITTED",
+    "template_id": "GEN-STOICH-002",
+    "template_path": "tasks_public\\GEN-STOICH-002\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-STOICH-003": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.506273+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.549019+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.601947+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.645764+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.687416+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.733853+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.775235+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.820863+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.850148+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.867264+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.891963+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.922221+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:20.461625+00:00",
+    "source_cluster_id": "archetype-stoich",
+    "status": "ADMITTED",
+    "template_id": "GEN-STOICH-003",
+    "template_path": "tasks_public\\GEN-STOICH-003\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-TITR-001": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:20.987067+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.031425+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.071338+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.117135+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.143893+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.170035+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.216957+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.263208+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.306285+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.355204+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.398383+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.443213+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:20.970633+00:00",
+    "source_cluster_id": "archetype-titr",
+    "status": "ADMITTED",
+    "template_id": "GEN-TITR-001",
+    "template_path": "tasks_public\\GEN-TITR-001\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-TITR-002": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.539489+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.587641+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.637727+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.684883+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.730797+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.774752+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.809587+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.849141+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.896266+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.930844+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.947115+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:21.993355+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:21.491319+00:00",
+    "source_cluster_id": "archetype-titr",
+    "status": "ADMITTED",
+    "template_id": "GEN-TITR-002",
+    "template_path": "tasks_public\\GEN-TITR-002\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-TITR-003": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.084748+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.129580+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.180826+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.222820+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.271152+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.315775+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.364649+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.407165+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.448382+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.494301+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.533883+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.576440+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:22.040049+00:00",
+    "source_cluster_id": "archetype-titr",
+    "status": "ADMITTED",
+    "template_id": "GEN-TITR-003",
+    "template_path": "tasks_public\\GEN-TITR-003\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-UVVIS-001": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.674849+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.719933+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.768795+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.807607+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.851542+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.898634+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.943970+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:22.988716+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.037003+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.083439+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.127752+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.166166+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:22.624154+00:00",
+    "source_cluster_id": "archetype-uvvis",
+    "status": "ADMITTED",
+    "template_id": "GEN-UVVIS-001",
+    "template_path": "tasks_public\\GEN-UVVIS-001\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-UVVIS-002": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.258082+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.297005+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.339986+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.380450+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.420265+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.463664+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.503188+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.532662+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.564245+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.610546+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.659025+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.701286+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:23.211298+00:00",
+    "source_cluster_id": "archetype-uvvis",
+    "status": "ADMITTED",
+    "template_id": "GEN-UVVIS-002",
+    "template_path": "tasks_public\\GEN-UVVIS-002\\template.yaml",
+    "version": "1.0.0"
+  },
+  "GEN-UVVIS-003": {
+    "history": [
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.795955+00:00",
+        "from": "NOMINATED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.832393+00:00",
+        "from": "TRIAGED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.875062+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.925915+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:23.970909+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:24.018322+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:24.057845+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:24.108184+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "BUILT"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:24.153462+00:00",
+        "from": "BUILT",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:24.190331+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:24.234675+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "taskgen",
+        "at": "2026-08-15T21:55:24.280775+00:00",
+        "from": "PILOTED",
+        "reason": "generated family: schema+lint+selftest sweep (104/104 pass), truth by dual construction, shortcut symmetry by construction",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "C",
+    "registered_at": "2026-08-15T21:55:23.749891+00:00",
+    "source_cluster_id": "archetype-uvvis",
+    "status": "ADMITTED",
+    "template_id": "GEN-UVVIS-003",
+    "template_path": "tasks_public\\GEN-UVVIS-003\\template.yaml",
+    "version": "1.0.0"
+  },
+  "OPS-AUTH-001": {
+    "history": [
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:34.013781+00:00",
+        "from": "NOMINATED",
+        "reason": "construction gate: TRIAGED (task packet + tests + 0.1.1 repair)",
+        "to": "TRIAGED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:34.231741+00:00",
+        "from": "TRIAGED",
+        "reason": "construction gate: RIGHTS_CLEARED (task packet + tests + 0.1.1 repair)",
+        "to": "RIGHTS_CLEARED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:34.453751+00:00",
+        "from": "RIGHTS_CLEARED",
+        "reason": "construction gate: SCIENCE_SCREENED (task packet + tests + 0.1.1 repair)",
+        "to": "SCIENCE_SCREENED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:34.679299+00:00",
+        "from": "SCIENCE_SCREENED",
+        "reason": "construction gate: DATA_VERIFIED (task packet + tests + 0.1.1 repair)",
+        "to": "DATA_VERIFIED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:34.911195+00:00",
+        "from": "DATA_VERIFIED",
+        "reason": "construction gate: TASK_FRAMED (task packet + tests + 0.1.1 repair)",
+        "to": "TASK_FRAMED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:35.166665+00:00",
+        "from": "TASK_FRAMED",
+        "reason": "construction gate: TRUTH_REGIME_ASSIGNED (task packet + tests + 0.1.1 repair)",
+        "to": "TRUTH_REGIME_ASSIGNED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:35.400998+00:00",
+        "from": "TRUTH_REGIME_ASSIGNED",
+        "reason": "construction gate: CONSTRUCT_REVIEWED (task packet + tests + 0.1.1 repair)",
+        "to": "CONSTRUCT_REVIEWED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T02:02:35.611479+00:00",
+        "from": "CONSTRUCT_REVIEWED",
+        "reason": "construction gate: BUILT (task packet + tests + 0.1.1 repair)",
+        "to": "BUILT"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T04:14:47.519963+00:00",
+        "from": "BUILT",
+        "reason": "campaign release-0.2.0 evidence: truth/independent_reviews, runs/release-0.2.0/shortcuts, agent_outcomes, scorecard",
+        "to": "INDEPENDENTLY_REVIEWED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T04:14:47.728167+00:00",
+        "from": "INDEPENDENTLY_REVIEWED",
+        "reason": "campaign release-0.2.0 evidence: truth/independent_reviews, runs/release-0.2.0/shortcuts, agent_outcomes, scorecard",
+        "to": "SHORTCUT_AUDITED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T04:14:47.935848+00:00",
+        "from": "SHORTCUT_AUDITED",
+        "reason": "campaign release-0.2.0 evidence: truth/independent_reviews, runs/release-0.2.0/shortcuts, agent_outcomes, scorecard",
+        "to": "PILOTED"
+      },
+      {
+        "actor": "ansh",
+        "at": "2026-08-15T04:14:48.127574+00:00",
+        "from": "PILOTED",
+        "reason": "campaign release-0.2.0 evidence: truth/independent_reviews, runs/release-0.2.0/shortcuts, agent_outcomes, scorecard",
+        "to": "ADMITTED"
+      }
+    ],
+    "primary_track": "H",
+    "registered_at": "2026-08-15T01:27:03.739301+00:00",
+    "source_cluster_id": "cluster-prototype-ops-001",
+    "status": "ADMITTED",
+    "template_id": "OPS-AUTH-001",
+    "template_path": "tasks_public\\OPS-AUTH-001\\template.yaml",
+    "version": "0.1.0"
+  }
+}

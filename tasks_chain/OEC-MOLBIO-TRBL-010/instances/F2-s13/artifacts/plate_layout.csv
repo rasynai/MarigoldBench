@@ -1,0 +1,24 @@
+plate_id,well,construct,dose_nM,replicate,dispense_step
+NR-2413,B3,NFKB-luc,0.5,1,1
+NR-2413,C3,NFKB-luc,0.5,2,2
+NR-2413,D3,NFKB-luc,0.5,3,3
+NR-2413,B4,NFKB-luc,1.0,1,4
+NR-2413,C4,NFKB-luc,1.0,2,5
+NR-2413,D4,NFKB-luc,1.0,3,6
+NR-2413,B5,NFKB-luc,2.0,1,7
+NR-2413,C5,NFKB-luc,2.0,2,8
+NR-2413,D5,NFKB-luc,2.0,3,9
+NR-2413,B6,NFKB-luc,4.0,1,10
+NR-2413,C6,NFKB-luc,4.0,2,11
+NR-2413,D6,NFKB-luc,4.0,3,12
+NR-2413,A7,NFKB-luc,8.0,1,13
+NR-2413,A8,NFKB-luc,8.0,2,14
+NR-2413,B7,NFKB-luc,8.0,3,15
+NR-2413,A9,NFKB-luc,16.0,1,16
+NR-2413,A10,NFKB-luc,16.0,2,17
+NR-2413,B9,NFKB-luc,16.0,3,18
+
+Map note: vehicle and positive-control wells occupy columns 10-11
+and are not part of this potency work order.
+Compound additions followed the listed dispense steps; no randomized
+reassignment was made after the map was printed.

@@ -1,0 +1,9 @@
+SAMPLE PREPARATION RECORD   OX-1012
+Analyst: JL       source: SRC-112
+Source aliquot volume: 100 uL
+Diluent volume:       200 uL
+Final dilution factor: 3.0
+Prepared: 2025-01-13  14:22
+Signature: JL
+
+worklist fields: matrix=solution ; DF=5.0 ; rack=B2

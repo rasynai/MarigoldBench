@@ -1,0 +1,7 @@
+You are supporting the development committee for a day-450 relapse review. Use the attached interval table, withdrawal disposition ledger, endpoint committee addendum, and statistical operating-plan extract. Reconcile the endpoint classifications, estimate the primary relapse cumulative incidence, evaluate the specified withdrawal tipping analysis, and translate the results into the operating call. Show enough arithmetic to make the treatment of deaths and withdrawals auditable. Report the relative overstatement from using one minus ordinary Kaplan-Meier as a percentage of the correct primary cumulative incidence. If the supplied records do not contain a quantity required for the operating call, do not invent it.
+
+Finish with one machine-readable block using exactly these fields and allowed tokens:
+```json
+{"death_without_relapse_role": "<one of: COMPETING_EVENT | CENSOR_AT_DEATH>", "primary_estimator": "<one of: AALEN_JOHANSEN | ONE_MINUS_KM>", "primary_cif": <number>, "km_relative_overstatement_pct": <number>, "informative_withdrawals": <integer>, "tipping_cif": <number>, "decision": "<one of: GO | NO_GO | NOT_ROBUST | PUSH_BACK>", "conf_death_without_relapse_role": <0-1>, "conf_primary_estimator": <0-1>, "conf_primary_cif": <0-1>, "conf_km_relative_overstatement_pct": <0-1>, "conf_informative_withdrawals": <0-1>, "conf_tipping_cif": <0-1>, "conf_decision": <0-1>}
+```
+Every confidence must be in [0,1] and represent the probability that the corresponding field is correct.

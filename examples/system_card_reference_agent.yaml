@@ -1,0 +1,36 @@
+schema_version: "crucible.system_card.v1"
+system_id: "ref-agent-v0"
+system_name: "CRUCIBLE reference agent (prototype)"
+condition: "reference_agent"
+version: "0.1.0"
+snapshot_date: "2026-08-14"
+account_tier: "n/a"
+model_routing: "single-model"
+base_model: null
+enabled_tools:
+  - "python_sandbox"
+  - "file_io"
+tool_list_hash: null
+execution:
+  local_connected_machine: true
+  hosted_endpoints: false
+memory:
+  cross_session: "none"
+authority:
+  default_mode: "ask_on_risky"
+network_mode: "OFFLINE"
+resource_policy:
+  wall_clock_minutes: 60
+  max_tokens: null
+  max_model_calls: null
+  max_cost_usd: 0
+  cpu_core_hours: 1
+  gpu_hours: 0
+  concurrency: 1
+  retry_policy: "no automatic retries"
+  human_intervention_policy: "approvals only"
+adapter_version: "0.1.0"
+provider_involvement: "none"
+known_limitations:
+  - "Prototype record for schema exercise only; no agent is implemented yet."
+data_policy: "no external data transmission"

@@ -1,0 +1,17 @@
+Sequence export  IM-4115    instrument: HPLC-UV-07
+Acquired: 2026-06-18  analyst initials: LK
+
+[Quantitation method]
+Component       : Impurity A
+Fit             : linear, intercept fitted
+Weighting       : None
+Calibration unit: percent w/w
+Area source     : 238 nm, integrated baseline-to-baseline
+
+[Processing history]
+09:14  sequence created from IMP-A routine set
+11:48  integrations saved
+12:03  batch summary exported
+
+Autosampler comment: vial positions 14 and 15 entered with a space;
+names normalized during import. No reinjections.

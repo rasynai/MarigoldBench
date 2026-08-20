@@ -1,0 +1,9 @@
+{
+  "data_acquisition": 0.062,
+  "interpretation_uncertainty": 0.188,
+  "monitoring_recovery": 0.062,
+  "packaging_provenance": 0.125,
+  "qc_preprocessing": 0.25,
+  "request_interpretation": 0.125,
+  "validation_controls": 0.188
+}

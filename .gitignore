@@ -1,0 +1,42 @@
+.secrets/
+__pycache__/
+*.pyc
+.pytest_cache/
+runs/
+*.egg-info/
+
+# ---------------------------------------------------------------------------
+# TRUTH BOUNDARY (CORR-005). Publishing any of the following turns the
+# benchmark into a lookup table on the day of release: CORE-Bench shipped
+# recoverable answers in 20 of 45 hard tasks, and GAIA's public answer file
+# let an auditor score ~98% without solving anything. Nothing here may be
+# committed. The public development split is exported deliberately by
+# crucible.release_build, never by tracking these paths.
+# ---------------------------------------------------------------------------
+
+# Sealed splits: never published in any form.
+tasks_sealed/
+tasks_chain_sealed/
+
+# Computed answers, tolerances, acceptance sets and grader match patterns.
+tasks_public/**/truth/
+tasks_open/**/truth2/
+tasks_chain/**/truth_chain/
+
+# Worked passing submissions are answer keys in prose form.
+tasks_public/**/verification/tests/accepted/
+tasks_public/**/verification/tests/rejected/
+
+# Generators reconstruct every instance AND its answers from a seed, and the
+# hazard tables enumerate exactly what is planted and where - which turns the
+# hazard condition into "did you read the generator" rather than "are you
+# careful". Only the documented public-development archetypes are exportable.
+crucible/taskgen/archetypes.py
+crucible/taskgen/factory.py
+crucible/chain/plan.py
+crucible/chain/exemplar.py
+tasks_chain/**/template.json
+
+# Third-party papers are not redistributed; the synthesis notes are ours.
+analysis/literature*/pdfs/
+*.pdf

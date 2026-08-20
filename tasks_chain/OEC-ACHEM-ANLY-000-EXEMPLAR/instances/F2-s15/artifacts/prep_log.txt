@@ -1,0 +1,10 @@
+PREP LOG  study PK-715  analyst RW
+----------------------------------------------
+Working standards prepared from stock lot S-4471 in blank plasma.
+Levels 0.5-20 nM: serial dilution, verified against balance printout.
+Level 50 nM: prepared from stock lot S-4417 pulled from the adjacent
+  rack. Lot S-4417 is the 1.25 mg/mL formulation, not the 1.00 mg/mL
+  stock used for the rest of the curve, so this level is over-strength
+  relative to its nominal value. Re-prep requested; the run was
+  released before the re-prep was scheduled.
+Unknown sample PK-715-U1: single aliquot, extracted with the batch.

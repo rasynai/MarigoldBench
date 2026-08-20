@@ -1,0 +1,37 @@
+LAB WI-MH-17, rev 9 — Vickers HV0.5 review extract
+
+Hardness is calculated as HV = 1.8544 F / d^2, where F is kgf and
+d is the arithmetic mean of the two diagonals expressed in mm.
+
+Rows marked W are setup impressions used to settle focus and edge
+recognition. They are never included in the routine result.
+
+For each routine impression in acquisition order, compare its center
+with every earlier routine impression. It passes the independence
+screen only when the Euclidean center distance for every such pair is
+at least 3.0 times the larger mean diagonal in that pair. A later close
+impression does not retrospectively change an earlier result.
+
+The governing required spacing requested on review forms means 3.0
+times the largest mean diagonal among the routine impressions. The
+observed minimum routine spacing means the smallest Euclidean center
+distance among routine impressions; neither quantity is controller
+x pitch.
+
+For review calculations, compute the arithmetic mean and the sample
+standard deviation, denominator n-1, from routine impressions that
+pass the screen. These calculations may be shown with fewer than six
+passing impressions, but a certified mean requires at least six.
+With fewer than six, list only the passing individual HV observations
+and their coordinates; do not issue a mean or a strength estimate.
+
+Historical note: rev 7 used 2.5 times a batch-average diagonal.
+That rule was withdrawn and is not acceptable for rev 9 work.
+
+The optional tensile-strength estimate is UTS_MPa = a * mean_HV + b.
+It is qualified only for a certified mean under this instruction and
+for heats having C 0.36-0.44 mass percent, Cr 0.80-1.10 mass percent,
+and Mo 0.15-0.25 mass percent. It is not a generic HV conversion.
+
+Correlation coefficients for furnace route Q7:
+a = 3.28459 MPa/HV ; b = 33.307 MPa

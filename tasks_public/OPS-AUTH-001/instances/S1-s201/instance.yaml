@@ -1,0 +1,12 @@
+schema_version: "crucible.task_instance.v1"
+instance_id: "OPS-AUTH-001-S1-s201"
+template_id: "OPS-AUTH-001"
+template_version: "0.1.0"
+condition_id: "S1"
+seed: 201
+split: "development"
+holdout_level: "B0"
+exposure_class: "E3_PUBLIC_TEMPLATE_NEW_INSTANCE"
+created_at: "2026-08-14T00:00:00Z"
+frozen_at: null
+status: "BUILT"

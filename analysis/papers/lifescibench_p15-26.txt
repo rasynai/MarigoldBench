@@ -1,0 +1,461 @@
+
+=== PAGE 15 ===
+live research settings. Such studies could establish a tighter relationship between the progression of
+model capabilities and whether AI systems actually improve scientific productivity.
+8 Conclusion
+In this paper, we make the following contributions:
+1. Dataset:We introduce LifeSciBench, a benchmark of 750 expert-authored problems in the life
+sciences spanning seven types of scientific workflows and seven biological domains.
+2. Rubrics:We provide detailed expert-written rubrics totaling 19,020 criteria, designed to evaluate
+not only final correctness but also the quality of the model’s reasoning and communication.
+3. Expert construction:We describe a multi-round process of task creation, review, and validation
+involving practicing life scientists with both Ph.D.-level training and industry experience.
+4. Model benchmarking:We evaluate 5 frontier models across all 750 questions and identify
+relative strengths and weaknesses across various domains.
+LifeSciBench measures whether models can produce scientifically grounded, operationally useful
+responses to realistic research tasks. The benchmark shows that current frontier systems can
+be useful on scientific synthesis and expert-facing interpretation, but remain limited on artifact-
+grounded reasoning, exact scientific outputs, constrained design, and operational decision-making.
+By grounding evaluation in the forms of reasoning and analysis that shape applied research,
+LifeSciBench offers a more direct way to measure progress toward AI systems that can support
+life-science work in practice.
+Acknowledgements
+Research collaborators.Amelia Liu, Andrew Ho, Anne Marie Droste, David Martin, Edmund
+Wong, Edward Zhou, Isabelle Zhou, Joshua Park, Joy Jiao, Katie-Rose Skelly, Kenny Kim, Kevin
+Rao, Masatoshi Uehara, Max Marion, Nicole Fitzgerald, Rachel Dias, Suyash Shringarpure, Yuan
+Yuan, and Yunyun Wang.
+Expert scientist contributors.We thank the expert scientist contributors coordinated through
+TacitCo. forauthoring, reviewing, andvalidatingLifeSciBenchtasksandrubrics. Theircontributions
+were essential to grounding the benchmark in realistic life science research work. Individual
+contributor names are not listed at the request of the vendor. Inclusion in this acknowledgement
+does not imply endorsement of the research, results, or conclusions.
+A Disclosures
+A.1. AI Disclosure
+We used AI tools to support literature review, language refinement, and routine engineering workflows
+during the development of this work.
+15
+=== PAGE 16 ===
+A.2. Expert Contributor Disclosure
+LifeSciBench tasks were authored, reviewed, and validated by external domain experts with relevant
+life-science training and experience. Expert contributors were compensated for their work.
+A.3. Evaluation and Grading Disclosure
+Model outputs were evaluated using task-specific rubrics developed during benchmark construction.
+Automated or model-assisted grading, where used, was applied against these rubrics rather than
+free-form preference judgments.
+A.4. Institutional Disclosure
+LifeSciBench was developed by OpenAI, and the evaluated systems include OpenAI models. Results
+should be interpreted with this institutional context in mind.
+A.5. Data Availability and Safety Disclosure
+Public release of tasks, rubrics, artifacts, or evaluation materials may be limited by licensing, privacy,
+proprietary information, or biological safety considerations. During benchmark construction and
+release review, we excluded or restricted content where broader dissemination could create biological
+safety risks.
+B Additional Benchmark Details
+This appendix provides the full taxonomies used for dataset stratification, along with additional
+coverage and artifact-distribution figures.
+16
+=== PAGE 17 ===
+B.1. Workflow Taxonomy
+Workflow Taxonomy
+Seven workflow categories used to organize LifeSciBench tasks
+Workflow Definition
+Evidence handling Extracting, interpreting, comparing, or synthesizing scientific
+evidence from papers, figures, regulatory documents, experimental
+outputs, or structured data.
+Analysis Performing quantitative, statistical, computational, or mechanistic
+analysis of biological, chemical, or experimental data.
+Design and optimization Designing or optimizing molecules, assays, experiments, constructs,
+protocols, or screening strategies.
+Scientific reasoning Explaining mechanisms, evaluating hypotheses, identifying causal
+relationships, or reasoning under uncertainty.
+Validation and operations Troubleshooting, quality control, feasibility assessment,
+operational planning, or translational risk evaluation.
+Translation Connecting preclinical or biological evidence to clinical relevance,
+therapeutic implications, patient impact, biomarker use, trial
+design, safety considerations, or advancement toward human
+studies.
+Scientific communication Summarizing, rewriting, explaining, or communicating scientific
+findings for a specified audience or decision context.
+Figure 10: Workflow taxonomy.
+B.2. Bio Domain Taxonomy
+Biological and Scientific Domain Taxonomy
+Seven domain categories used to stratify LifeSciBench tasks
+Domain Definition
+Genomics Genomic variation, gene regulation, sequencing interpretation,
+gene editing, construct design, and genetic mechanisms.
+Chemistry / MedChem Small molecules, medicinal chemistry, structure-activity
+relationships, chemical representations, ADME, and optimization
+tradeoffs.
+Protein + Structural Biology Protein sequence, structure, stability, folding, binding, engineering,
+and structural interpretation.
+Molecular + Cell Biology Cellular mechanisms, pathways, molecular biology experiments,
+perturbations, and biological interpretation.
+Assays + Screening Assay design, screening readouts, controls, validation,
+troubleshooting, and experimental decision-making.
+Bioinformatics / Comp Bio Computational analysis of biological data, omics pipelines,
+statistical inference, data visualization, and tooling.
+Clinical / Translational Science Preclinical-to-clinical reasoning, biomarker use, trial design,
+patient impact, safety, and translational risk.
+Figure 11: Biological and scientific domain taxonomy.
+17
+=== PAGE 18 ===
+B.3. Data Source & Evidence Taxonomy
+Data Source and Evidence Taxonomy
+Evidence categories used to characterize task context
+Evidence type Definition
+Text / sequence Plain text, nucleotide or amino-acid sequences, construct
+descriptions, and sequence-oriented files.
+Figures / images Experimental figures, microscopy images, gels, plots, screenshots,
+and other image-based evidence.
+Tables / spreadsheets CSV, TSV, XLSX, or tabular data requiring extraction,
+comparison, calculation, or synthesis.
+PDFs / documents Scientific articles, reports, regulatory materials, protocols, or
+document-based task context.
+Chemical / structure SMILES, InChI, molecular structures, coordinates, structure files,
+and chemistry-specific representations.
+Other scientific files Specialized output files from scientific instruments, computational
+tools, or domain-specific pipelines.
+Web / links Prompt-provided URLs used as source material or task context;
+counted separately from attached artifacts.
+Figure 12: Data source and evidence taxonomy.
+B.4. Workflow×Bio Domain Heatmap
+Figure 13: LifeSciBench coverage by workflow and biological domain.
+18
+=== PAGE 19 ===
+B.5. Data Source & Evidence Distribution
+Figure 14: Distribution of attached artifacts by file type.Prompt-provided URLs are counted separately.
+C Rubric Writing Guidelines
+Rubrics were written according to the following principles:
+1.Specificity:each criterion should describe a concrete property of the response.
+2.Atomicity:each criterion should evaluate a single claim, calculation, decision, or constraint.
+3. Evaluability:criteria should be answerable as satisfied or not satisfied from the model response
+alone.
+4. Grounding:criteria should be supported by the task prompt, provided artifacts, accepted
+scientific facts, or expert consensus.
+5. Non-redundancy:criteria should avoid double-counting the same requirement unless the
+repeated criterion captures a distinct aspect of the response.
+6. Operational usefulness:rubrics should reward responses that are not merely correct in
+isolation but useful for the scientific decision posed by the task.
+19
+=== PAGE 20 ===
+D Example Tasks
+D.1. Analysis - Spatial Transcriptomics
+Example Benchmark Task — Analysis
+Task Prompt
+Using the attached Visium data from an FFPE cervical cancer slide, cluster the spots into4k-means
+groups, annotate the dominant cell type in each cluster, and recommend the1–2 most promising
+targeted therapies(ADC, TCE, or CAR-T) for this patient based on antigen expression differences
+between tumor and non-tumor regions. Report the tumor and non-tumorantigen prevalence, odds
+ratio, and specificityfor the recommended targets.
+Artifacts
+filtered_feature_bc_matrix.h5 analysis.tar.gz spatial.tar.gz
+Scoring Rubric
+Analysis
+[+10]Identifies two clusters as tumor spots.
+[+5]Identifies one cluster as cancer-associated fibroblasts.
+[+5]Identifies one cluster as stromal spots.
+[+10]Identifies that there is no immune cluster.
+Targeted therapies
+[+3]Identifies F3 as a potential therapeutic target.
+[+2] Identifies that 90–100% of tumor spots have F3 ex-
+pression.
+[+1] Identifies that 80–90% of non-tumor spots have F3
+expression.
+[+1] Identifies that F3 has an odds ratio of 11–13 between
+tumor and non-tumor spots.
+[+2] Identifies that F3 has a specificity of 12–16% between
+tumor and non-tumor spots.
+[+3]Identifies TROP2 as a potential therapeutic target.
+[+3]Identifies HER2 as a potential therapeutic target.
+[+3] Identifies NECTIN4 as a potential therapeutic target.
+[+3]Identifies HER3 as a potential therapeutic target.
+Treatment recommendation
+[+5] Identifies that NECTIN4 would be a potential thera-
+peutic target for this patient.
+[+5] Identifies that HER3 would be a potential therapeutic
+target for this patient.
+[+6] Identifies that Enfortumab vedotin may be consid-
+ered as a potential therapeutic option given NECTIN4
+expression, while acknowledging it is not yet an estab-
+lished standard of care for cervical cancer.
+[+6] Identifies that Patritumab deruxtecan would be a po-
+tential therapeutic for this patient.
+[+3] Acknowledges that checkpoint inhibitor efficacy may
+be limited given the lack of a distinct immune cluster
+observed in this Visium analysis.
+Figure 15:The model receives Visium FFPE data from a cervical cancer slide and must perform unsupervised
+clustering, cell-type annotation, antigen expression analysis, and evidence-based therapy recommendation. Each target
+(F3, TROP2, HER2, NECTIN4, HER3) additionally carries per-antigen prevalence, odds ratio, and specificity criteria
+not shown here.
+20
+=== PAGE 21 ===
+D.2. Design, Optimization Prediction - Golden Gate Cloning
+Example Benchmark Task — Design, Optimization & Prediction
+Task Prompt
+Using the destination vector sequence and the NDC80 (A), linker (B), and HaloTag (C) fragment
+sequences provided, design a seamlessGolden Gate cloning planto assemble an in-frame NDC80–
+linker–HaloTag fusion into the vector’s existing BsmBI-compatible site in the order A-B-C. Design
+fragment primers with18 bp annealing regionsandequal 4 bp junction overhangs(each
+junction contributing 2 bp from each flanking fragment after digestion), introducing no extra amino
+acids. Identify the A/B and B/C overhangs on the forward strand and the vector-side overhangs 5’→3’,
+using N for any undefined bases.
+Artifacts
+A(NDC80, 2706 bp)atgaagcgcagttcagtt...tcttctgaagaa
+B(Linker, 105 bp)gcaaaggaggcagctgca...gcagctaag
+C(HaloTag, 648 bp)GCAGAAATCGGTACTGGC...TCCGGCTAG
+Vector(∼4.9 kb)ccggattcgacattgatt...atgaggcgcg
+Scoring Rubric
+Overhangs
+[+2.5]Vector–A overhang:GGTG(5’→3’, vector side).
+[+2.5]Vector–C overhang:GTCA(5’→3’, vector side).
+[+2.5]A/B overhang:AAGC(5’→3’, forward strand).
+[+2.5]B/C overhang:AGGC(5’→3’, forward strand).
+Fragment A primers (complete)
+[+3]Fwd annealing:atgaagcgcagttcagtt.
+[+3]Fwd primer includes 1–6 base 5’ clamp.
+[+3]Fwd primer placesCGTCTCNafter clamp.
+[+6]Fwd overhang following BsmBI site:CACC.
+[+3]Rev annealing:ttcttcagaagacttaat.
+[+3]Rev primer includes 1–6 base 5’ clamp.
+[+3]Rev primer placesCGTCTCNafter clamp.
+[+6]Rev overhang following BsmBI site:GC.
+Fragment B primers
+[+3]Fwd annealing:gcaaaggaggcagctgca.
+[+6]Fwd overhang following BsmBI site:AA.
+[+3]Rev annealing:cttagctgcagcttcctt.
+[+6]Rev overhang following BsmBI site:GC.
+Fragment C primers
+[+3]Fwd annealing:gcagaaatcggtactggc.
+[+6]Fwd overhang following BsmBI site:AG.
+[+3]Rev annealing:ctagccggaaatctcgag.
+[+6]Rev overhang following BsmBI site:TGAC.
+Figure 16:The model designs a three-fragment Golden Gate assembly using BsmBI, deriving junction overhangs
+from sequence context and producing complete primer architectures. Fragment sequences are truncated; full sequences
+are provided in the task. Fragment B and C rubric items show only annealing and overhang criteria; 5’ clamp and
+BsmBI site architecture items (+3pts each) are omitted for brevity.
+21
+=== PAGE 22 ===
+D.3. Evidence Handling - Plasmid Sequencing
+Example Benchmark Task — Evidence Handling
+Task Prompt
+I sequenced this plasmid from a collaborator. Using the attached plasmid sequencing data, tell
+me as specifically as possiblewhat protein(s) this construct is designed to express, what
+reporter/selectable markers are present, what promoters drive the expression cassettes, and what
+construct or sequence changes you’d recommendif I want to express the protein solubly in
+mammalian cells.
+Artifacts
+plasmid_reads.fastq
+Scoring Rubric
+Sequence identification
+[+12] Reports expressed DNA sequence≥99% identical to
+the encoded TCR construct.
+Protein identity & domains
+[+6] Identifies the expressed TCR specificity as the G115
+TCR.
+[+3] Identifies TRGV9*01 as theγ-chain variable segment.
+[+3]Identifies TRGJP*01 as theγ-chain joining segment.
+[+3]Identifies mTRBC as the upstream constant region.
+[+3]Identifies P2A as a self-cleaving peptide.
+[+3] Identifies TRDV2*03 as theδ-chain variable segment.
+[+3] Identifies mTRAC as the downstream constant region.
+[+1]Lists protein domains in correct N→C order.
+Promoters & markers
+[+6] Identifies EF1α as the promoter for the TCR expres-
+sion cassette.
+[+3] Identifies BSD (blasticidin S deaminase) as selectable
+marker.
+[+2]Identifies PGK as the promoter driving BSD.
+[+2] Identifies AmpR/β-lactamase resistance marker and
+its promoter.
+Modifications for soluble expression
+[+2] Notes mTRBC S57C and mTRAC T48C engineered
+disulfide already present.
+[+4] Recommends replacing Cys inNYSYCLSSR with Ala or
+Ser.
+[+3] Recommends truncating TM/cytoplasmic domains
+from mTRBC.
+[+3] Recommends truncating TM/cytoplasmic domains
+from mTRAC.
+[+2] Recommends expressing chains as separate secreted
+polypeptides.
+[+4] Recommends adding dimerization sequences (e.g.,
+Jun/Fos zippers or Fc).
+Figure 17:The model must assemble a complete construct description from raw sequencing reads, identifying TCR
+chain architecture, regulatory elements, and markers, then recommend specific molecular modifications for soluble
+expression. Additional domain identification and expression engineering criteria are omitted for brevity.
+22
+=== PAGE 23 ===
+D.4. Reasoning - Hippocampal Panel
+Example Benchmark Task — Reasoning
+Task Prompt
+I’m evaluating whether a 3-marker hippocampal spatial transcriptomics panel—Slc17a7/VGLUT1,
+Slc17a6/VGLUT2, and Slc32a1/VGAT—in the attached coronal mouse brain image is suitable for
+ROI selection, neuron segmentation, excitatory/inhibitory classification, and downstream subregion
+comparisons. Review what these markers show in and around the hippocampus, whether the image
+looks more like RNA in situ hybridization or protein immunofluorescence, where the panel is and
+is not fit for purpose, which ROI-profiling mode best matches marker-defined hippocampal analysis
+(Geometric, Segmentation, Cell Type specific, Contour, or Gridded), and what validation or panel
+changes are required before trusting single-cell conclusions. Limited to four channels and considering
+DAPI + VGLUT1 + VGLUT2 + VGAT: if you would not approve that panel, propose a better
+alternative and practical imaging changes.
+Artifacts
+image.jpeg
+Scoring Rubric
+Marker interpretation
+[+2] VGLUT1/2 and VGAT should not be used directly as
+the cell or boundary mask.
+[+1] RNA ISH is not appropriate for morphology marker
+protein detection.
+[+1] Protein morphology stains are more suitable for seg-
+mentation than RNA markers.
+[+1] VGLUT/VGAT are functional markers, not morpho-
+logical segmentation markers.
+[+1.5] Signal amplification in ISH may broaden apparent
+target borders.
+[+0.5] Dense hippocampal packing creates ambiguous cell
+boundaries.
+[+0.5] Dropout or weak signal can cause neurons to be missed
+or misclassified.
+ROI profiling mode
+[+4]Segmentation is the most appropriate listed method.
+[+3.7] Cell Type specific profiling should not be used with
+these markers.
+[+3] Geometric profiling is less appropriate for marker-
+defined compartments.
+[+3] Gridded profiling is less appropriate for marker-defined
+compartments.
+[+1] None of the listed methods enables single-neuron seg-
+mentation here.
+Required validation
+[+1] Recommends fluorescent nuclear stain (DAPI or
+Hoechst).
+[+1]Recommends soma-dendritic marker (MAP2).
+[+2] Recommends brain tissue as a staining positive control.
+[+2] Recommends non-neuronal tissue as a staining nega-
+tive control.
+Final judgment
+[+0.75] Panel acceptable for broad hippocampal ROI selec-
+tion only with caveats.
+[+0.75]Panel is insufficient for single-neuron segmentation.
+[+1] Panel lacks a soma-dendritic morphology-supporting
+marker.
+[+1] Using VGLUT1 and VGLUT2 wastes limited channel
+capacity.
+4-channel panel design
+[+1] Proposes panel preserving morphology support and
+excitatory/inhibitory identity.
+[+4] Improved resolution does not make VGLUT/VGAT
+valid whole-cell boundary markers.
+[+4] Panel does not support reliable single-cell spatial tran-
+scriptomic conclusions.
+[+2] Recommends expansion microscopy to improve mor-
+phology boundary visualization.
+Figure 18:The model must integrate image evidence, marker biology, and profiling-mode constraints to assess a
+hippocampal spatial transcriptomics panel and propose panel improvements. The full rubric contains over 50 criteria
+spanning marker interpretation, ROI mode selection, required validation, final judgment, and 4-channel panel design;
+a representative subset is shown.
+23
+=== PAGE 24 ===
+D.5. Translation - PILRA Xenograph
+Example Benchmark Task — Translation
+Task Prompt
+Human genetics points to PILRA R78 as the protective state and G78 as the risk-associated state
+for Alzheimer’s disease; in iPSC-microglia, R78 binds∼50% less ligand than G78 and shows lower
+proinflammatory cytokine secretion with improved metabolic function. Because the antibody does
+not cross-react with mouse PILRA, an NSG×5XFAD human-microglia xenograft model was used:
+PILRA-KO human microglia showed enhanced chemotaxis to plaques and decreased brain inflammation,
+and a PILRA antagonist antibody in WT xenografts recapitulated the KO phenotype.Do these
+results provide enough in vivo proof of concept to support a PILRA antagonist antibody
+for Alzheimer’s disease?Please assess the translational strength of the evidence and the main
+limitations of this model for PILRA antagonism.
+Scoring Rubric
+Xenograft model limitations
+[+5] Immunocompromised background fails to capture pe-
+ripheral immune cell biology.
+[+5] Does not fully capture AD-relevant neuroinflammatory
+mechanisms.
+[+9] Model biases toward microglial effects of PILRA an-
+tagonism.
+[+8] Incompletely models functional neuron–microglia in-
+teractions.
+[+9] Fails to account for PILRA as a negative regulator of
+peripheral inflammation.
+Missing peripheral biology & translational risk
+[+4] Misses PILRA’s role in limiting monocyte,
+macrophage, and neutrophil infiltration and
+inflammatory function.
+[+4] Misses PILRA–T cell interaction through peripheral
+monocytes.
+[+9] Cannot adequately address the therapeutic window of
+PILRA antagonism.
+[+9] Cannot assess how peripheral PILRA binding reduces
+CNS antibody availability.
+[+5] Opposing PILRA effects in microglia vs. periphery are
+not captured.
+[+5] Model is not sufficient to show in vivo proof of concept.
+Figure 19:The model must critically assess the translational adequacy of a xenograft proof-of-concept study for a
+CNS-targeting antibody, identifying mechanistic gaps between the model system and the human disease context. All
+rubric criteria are shown.
+24
+=== PAGE 25 ===
+D.6. Validation & Operations - DNA Methylation NASH
+Example Benchmark Task — Validation & Operations
+Task Prompt
+Please critically review the authors’ DNA methylation analysis for a liver-biopsy NASH study (80
+NASH patients and 40 healthy controls) run on the Illumina EPIC v2 array. Specifically, the authors
+applied GrimAge v2 directly to the EPIC v2 beta matrixand interpreted a higher mean
+estimated GrimAge in NASH as evidence of accelerated liver aging; they processed raw IDATs using
+minfi detection p-valueswith probe filtering, performedbatch correctionwith cases and controls
+unevenly distributed across chips using default ComBat on the beta matrix, andcollapsed EPIC v2
+replicate probe pairs by averaging. Focus on whether their GrimAge v2 interpretation is justified
+in liver tissue, whether the EPIC v2 preprocessing and batch correction are appropriate, and whether
+their handling of replicate probe pairs is valid.
+Scoring Rubric
+Problem 1: GrimAge v2 interpretation
+[+5] Raw mean GrimAge difference is not a valid measure
+of epigenetic age acceleration.
+[+5] Age acceleration is the residual from regressing Grim-
+Age v2 on chronological age.
+[+4] GrimAge v2 was developed and validated in blood, not
+liver tissue.
+[+4] EPIC v2 probe IDs with suffixes must be harmonised
+to canonicalcgidentifiers before clock application.
+Problem 2: Preprocessing & batch correction
+[+4] minfi detectionp-value approach is not appropriate
+for EPIC v2 data.
+[+10] pOOBAH (sesame R package) estimates background
+from out-of-band signal of Infinium Type I probes and
+should be used instead.
+[+5] ComBat mod argument must include NASH status as a
+protected covariate.
+[+5] ComBat should be applied to M-values, not beta val-
+ues.
+Problem 3: Replicate probe pairs
+[+7] Type I and Type II probes show systematic distri-
+butional differences; measurements are not directly
+comparable.
+[+12] Must check theInfinium_Design_Type manifest column
+before deciding how to handle each probe pair.
+[+7] Averaging probes that differ in design type biases clock
+scoring.
+Figure 20:The model must identify three distinct methodological errors in a DNA methylation study: clock
+misapplication to non-blood tissue with incorrect acceleration calculation, inappropriate EPIC v2 probe quality control
+and batch correction, and invalid probe-pair averaging. All rubric criteria are shown.
+E Reviewer Instructions
+Reviewers were asked to evaluate each task for scientific correctness, realism, rubric consistency,
+and clarity. In particular, reviewers checked that the question asked for the information rewarded
+by the rubric, that rubric criteria were objective and independently evaluable, that scientific claims
+were appropriately grounded, and that the task reflected realistic expert work rather than trivia or
+simple lookup.
+References
+Laurent, J., et al. 2024. LAB-Bench: Measuring capabilities of language models for biology research.
+arXiv preprint.
+Laurent, J., et al. 2026. LABBench2: An improved benchmark for AI systems performing biology
+research. arXiv preprint.
+25
+=== PAGE 26 ===
+Mitchener, L., et al. 2025. BixBench: A comprehensive benchmark for LLM-based agents in
+computational biology. arXiv preprint.
+Li, J., and Ho, A. 2026. GeneBench: Assessing AI agents for multi-stage inference problems in
+genomics and quantitative biology. bioRxiv preprint.
+26

@@ -1,0 +1,14 @@
+DOSE ADMINISTRATION REGISTER
+Study PK-433   subject S23
+planned product code : TAB-IR
+planned strength     : 100 mg
+planned route        : oral
+
+08:00  tablet removed from blister; water 240 mL
+08:01  administered: TAB-IR lot T6433  100 mg, one tablet, oral
+08:02  mouth check complete
+08:06  dose clock entered in eCRF as 08:01
+
+Product catalogue extract
+TAB-IR = immediate-release compressed tablet, 100 mg
+SUS-IR = immediate-release oral suspension, 20 mg/mL

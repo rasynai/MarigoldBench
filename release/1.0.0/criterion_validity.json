@@ -1,0 +1,8 @@
+{
+  "n_systems_with_brier": 9,
+  "spearman_rcr_vs_brier": 0.5166666666666667,
+  "expected_direction": "negative (higher RCR should mean lower Brier)",
+  "n_systems_with_discovery": 9,
+  "spearman_rcr_vs_discovery_hits": -0.36666666666666664,
+  "caveat": "n<=9 systems; diagnostic only, not criterion-validity proof"
+}

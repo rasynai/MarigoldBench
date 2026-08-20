@@ -1,0 +1,12 @@
+schema_version: "crucible.task_instance.v1"
+instance_id: "GEN-QNMR-002-N0-s2001"
+template_id: "GEN-QNMR-002"
+template_version: "1.0.0"
+condition_id: "N0"
+seed: 2001
+split: "hidden_test"
+holdout_level: "B2"
+exposure_class: "E3_PUBLIC_TEMPLATE_NEW_INSTANCE"
+created_at: "2026-08-15T00:00:00Z"
+frozen_at: null
+status: "BUILT"

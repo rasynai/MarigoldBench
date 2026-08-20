@@ -1,0 +1,12 @@
+schema_version: "crucible.task_instance.v1"
+instance_id: "GEN-LOGAUDIT-002-N1-s2002"
+template_id: "GEN-LOGAUDIT-002"
+template_version: "1.0.0"
+condition_id: "N1"
+seed: 2002
+split: "hidden_test"
+holdout_level: "B2"
+exposure_class: "E3_PUBLIC_TEMPLATE_NEW_INSTANCE"
+created_at: "2026-08-15T00:00:00Z"
+frozen_at: null
+status: "BUILT"

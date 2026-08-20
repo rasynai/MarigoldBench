@@ -1,0 +1,7 @@
+SHIFT RECORD / bay 3
+Job: QT-425-35   operator: ML
+Surface: 1 um diamond finish; etch omitted.
+Stage zero checked on the lower-left scribe.
+Loaded RSTR-4A-revC; anchors completed first, then the offset row. Controller display showed offset dx=143 um, dy=33 um.
+No focus alarms. Two setup impressions retained in the export.
+Review requested before LIMS closeout.
