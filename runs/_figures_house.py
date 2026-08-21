@@ -33,6 +33,7 @@ spec, rather than a silent one:
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 import matplotlib
@@ -41,6 +42,9 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager
 from matplotlib.offsetbox import AnnotationBbox, OffsetImage
 from matplotlib.patches import FancyBboxPatch
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from crucible.lab.logo import draw_logo  # noqa: E402
 
 ASSETS = Path(r"C:\Users\ansht\Downloads\marigold-figures")
 OUT = Path("figures/house")
@@ -167,13 +171,23 @@ def heading(fig, ax, title, subtitle=None):
 WORDMARK = "MarigoldBench"
 
 
-def wordmark(ax, h_in=6.4):
-    """One mark per figure, on the note's first baseline whether or not there
-    is a note. Not redundant text: these get shared away from the card that
-    names them."""
+def wordmark(fig, ax, h_in=6.4):
+    """The Rasyn mark and the benchmark name, once per figure, bottom right.
+
+    The mark is drawn from its SVG paths and filled in the accent hue, so it
+    matches the bars rather than sitting on the figure as a foreign asset. Its
+    x is measured from the rendered text rather than guessed, the same rule the
+    spec applies to the title and subtitle.
+    """
     step = 0.032 * (6.4 / h_in)
-    ax.text(0.945, 0.055 + step, say(WORDMARK), fontsize=9.5, color=MUT,
-            va="center", ha="right")
+    y = 0.055 + step
+    handle = ax.text(0.945, y, say(WORDMARK), fontsize=9.5, color=MUT,
+                     va="center", ha="right")
+    fig.canvas.draw()
+    box = handle.get_window_extent(fig.canvas.get_renderer())
+    left = ax.transAxes.inverted().transform((box.x0, box.y0))[0]
+    draw_logo(ax, fig, x=left - 0.014, y=y, height=0.030 * (6.4 / h_in),
+              colour=TEAL)
 
 
 def legend(ax, entries, x=0.615, y=0.880):
@@ -234,7 +248,7 @@ def scoreboard(rows, title, subtitle, note_text, legend_entries,
                 va="center", ha="right")
     if note_text:
         pass
-    wordmark(ax, h_in=h_in)
+    wordmark(fig, ax, h_in=h_in)
     OUT.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUT / filename, dpi=DPI, facecolor=BG)
     plt.close(fig)
@@ -431,7 +445,7 @@ def fig06_cost_accuracy():
         dx, dy, ha = place[s]
         ax.text(x + dx, y + dy, say(NAME[s]), fontsize=11.5, color=INK,
                 ha=ha, va="center")
-    wordmark(ax, h_in=6.8)
+    wordmark(fig, ax, h_in=6.8)
     OUT.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUT / "fig06_cost_accuracy.png", dpi=DPI, facecolor=BG)
     plt.close(fig)
