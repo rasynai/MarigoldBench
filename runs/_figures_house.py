@@ -104,6 +104,14 @@ def canvas(w_in: float, h_in: float):
     return fig, ax
 
 
+# Sponsor override on the figure spec, which asks for a stroke 25 to 35 percent
+# darker than the fill at lw 1.1 to 1.4. A hairline black outline instead: it
+# separates a bar from its track more crisply at thumbnail size, and at 0.5pt it
+# reads as an edge rather than as a second colour.
+BAR_EDGE = "#000000"
+BAR_EDGE_WIDTH = 0.5
+
+
 def bar(ax, fig, x, y_centre, length, height, colour):
     """A rounded bar. Rounding is capped so a short bar is not a lozenge."""
     if length <= 0:
@@ -113,7 +121,7 @@ def bar(ax, fig, x, y_centre, length, height, colour):
         (x, y_centre - height / 2), length, height,
         boxstyle=f"round,pad=0,rounding_size={radius}",
         mutation_aspect=fig._aspect, facecolor=colour,
-        edgecolor=STROKE[colour], linewidth=1.25, zorder=3))
+        edgecolor=BAR_EDGE, linewidth=BAR_EDGE_WIDTH, zorder=3))
 
 
 def track(ax, fig, x, y_centre, length, height):
@@ -200,7 +208,7 @@ def legend(ax, entries, x=0.615, y=0.880):
         ax.add_patch(FancyBboxPatch(
             (cursor, y - 0.011), 0.022, 0.022,
             boxstyle="round,pad=0,rounding_size=0.004", facecolor=colour,
-            edgecolor=STROKE[colour], linewidth=1.1, zorder=4))
+            edgecolor=BAR_EDGE, linewidth=BAR_EDGE_WIDTH, zorder=4))
         handle = ax.text(cursor + 0.030, y, say(label), fontsize=10.5,
                          color=MUT, va="center", ha="left")
         cursor += 0.030 + 0.0068 * len(label) + 0.028
