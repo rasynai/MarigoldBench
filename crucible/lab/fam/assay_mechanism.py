@@ -260,45 +260,21 @@ def verify(episode: Episode, submitted: dict | None, workspace: Path) -> Verdict
     detail["interference_recomputed"] = interference
     detail["interference_expected"] = key["interference_active"]
 
-    # Discount clauses that REJECT an explanation: "quenching, not inhibition"
-    # names inhibition only to rule it out. Without this the correct answer
-    # matches both sides and scores as a hedge - the same defect that cost
-    # three rounds on the chain track.
-    import re as _re
-    from ...chain.score import _decided_clauses
+    # One shared matcher, tested in tests/test_freetext.py. CORR-015: the
+    # literal phrase list here read "does not interfere" and "rules out
+    # quenching" as claims of interference, which failed correct answers in 51
+    # of 53 C0 episodes across all seven systems.
+    from ..freetext import asserts
 
-    NEGATED = (
-        # Literal phrasings that mention an explanation only to rule it out.
-        # Plain substring removal on purpose: a regex here failed silently in
-        # situ while passing in isolation, and a scoring rule that is hard to
-        # verify by eye is a liability.
-        "not inhibition", "not inhibitory", "not inhibiting", "not inhibit",
-        "not genuine inhibition", "not target engagement", "not on-target",
-        "no inhibition", "no target engagement", "not real inhibition",
-        "rather than inhibition", "instead of inhibition",
-        "as opposed to inhibition", "and not inhibition",
-        "not quenching", "not interference", "not an artifact",
-        "not an artefact", "not an optical artifact", "no quenching",
-        "no interference", "rather than quenching", "instead of quenching",
-        "not compound fluorescence",
-    )
-
-    def _drop_negated(text: str) -> str:
-        lowered = text.lower()
-        for phrase in NEGATED:
-            lowered = lowered.replace(phrase, " ")
-        return lowered
-
-    stated = _drop_negated(
-        _decided_clauses(str(field("signal_loss_mechanism") or ""))).lower()
     interference_words = ("quench", "interfer", "artifact", "artefact",
-                          "optical", "absorb", "inner filter", "fluorescence "
-                          "of the compound", "not inhibition", "compound "
-                          "fluorescence")
+                          "optical", "absorb", "inner filter",
+                          "compound fluorescence")
     inhibition_words = ("inhibit", "target engagement", "enzyme activity",
                         "genuine", "real inhibition", "on-target")
-    says_interference = any(w in stated for w in interference_words)
-    says_inhibition = any(w in stated for w in inhibition_words)
+    mechanism_text = str(field("signal_loss_mechanism") or "")
+    stated = mechanism_text.lower()
+    says_interference = asserts(mechanism_text, interference_words)
+    says_inhibition = asserts(mechanism_text, inhibition_words)
 
     if key["condition"] == "F2":
         # The only defensible outcome is a refusal that is ABOUT

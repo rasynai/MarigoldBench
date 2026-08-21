@@ -36,7 +36,3 @@ crucible/taskgen/factory.py
 crucible/chain/plan.py
 crucible/chain/exemplar.py
 tasks_chain/**/template.json
-
-# Third-party papers are not redistributed; the synthesis notes are ours.
-analysis/literature*/pdfs/
-*.pdf

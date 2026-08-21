@@ -9,7 +9,7 @@ verifier that **recomputes every physical and statistical claim from the
 submitted artefact**. Nothing the model says about its own work counts as
 evidence.
 
-Seven frontier systems, 4,935 recorded episodes, every transcript published.
+Seven frontier systems, 4,923 recorded episodes, every transcript published.
 
 Dataset and full results: **https://huggingface.co/datasets/rasynai/MarigoldBench**
 
@@ -17,18 +17,26 @@ Dataset and full results: **https://huggingface.co/datasets/rasynai/MarigoldBenc
 
 | System | n | Pass@1 | 95% CI (family-clustered) | Pass^3 |
 |---|---|---|---|---|
-| Grok 4.6 | 810 | **63.2%** | [51.7, 74.2] | 52.2% |
-| GPT-5.6 Sol | 810 | 58.3% | [46.2, 70.1] | 49.6% |
-| Claude Opus 5 | 810 | 57.9% | [45.2, 70.1] | 45.9% |
-| DeepSeek V4 Pro | 270 | 51.1% | [40.0, 61.5] | - |
-| Gemini 3.1 Pro | 810 | 48.9% | [39.1, 58.5] | 32.6% |
+| Grok 4.6 | 804 | **64.6%** | [53.8, 74.9] | 54.0% |
+| Claude Opus 5 | 810 | 61.0% | [48.4, 73.2] | 50.4% |
+| GPT-5.6 Sol | 806 | 58.9% | [46.9, 70.7] | 50.4% |
+| DeepSeek V4 Pro | 270 | 50.7% | [39.6, 61.5] | - |
+| Gemini 3.1 Pro | 809 | 49.9% | [40.5, 59.3] | 33.1% |
+| Kimi K2 Thinking | 270 | 32.2% | [22.2, 42.6] | - |
 | GLM-4.7 | 270 | 31.9% | [23.0, 40.7] | - |
-| Kimi K2 Thinking | 270 | 29.6% | [20.0, 40.0] | - |
 
 **Read the intervals, not the ranking.** Episodes inside a task type share a
 generator; the measured intraclass correlation is 0.40, so a naive binomial
 interval is 2.9x too narrow. This release separates the top group from the
-bottom two and **cannot** rank Grok, GPT and Claude against each other.
+bottom two and **cannot** rank Grok, Claude and GPT against each other.
+
+**Corrected on 2026-08-20.** Reading the recorded transcripts found three
+defects in the benchmark rather than in the models: a tool sandbox that confined
+the file tool and not the interpreter (CORR-014), a checkpoint that read a
+ruled-out explanation as a claim (CORR-015), and a submit handler that dropped
+73 of one model's answers and none of another's (CORR-016). Everything is
+re-scored, 12 contaminated episodes are voided, and Claude moved from 57.9 to
+61.0 percent, which changed the order of second and third place.
 
 ## How it works
 
@@ -59,7 +67,7 @@ build gates.
 | `runs/gate_families.py` | The gate that decides which task types may be scored |
 | `runs/check_goal.py` | The 22 stop conditions for the release |
 | `runs/_figures_house.py` | Every figure, regenerated from recomputed data |
-| `docs/AUDIT.md` | Pre-release audit, including four defects found in our own claims |
+| `docs/AUDIT.md` | Audit, including seven defects found in our own claims |
 | `docs/LIMITATIONS.md` | What these numbers cannot support |
 | `CORRECTIONS.md` | Every material error in construction, scoring or conduct |
 | `GOAL.md` | The stopping contract this release was built against |
@@ -88,11 +96,13 @@ are mechanically enforced; the intraclass correlation was quoted as 0.26 and is
 reasoning effort was set high for Claude and GPT and left at each provider's
 default for the other five. Grok still finished first without it.
 
-Security note: the tool sandbox now runs model-authored code with an
-allow-listed environment. It did not always, and models that printed
-`os.environ` read the harness's provider keys. Found by this audit one command
-before publication, fixed, tested, and written up as CORR-013. If you build an
-agent harness, pass `env=` to your sandbox.
+Security note, in two parts, both ours. The sandbox used to pass the harness's
+environment to model-authored code, so a model printing `os.environ` read our
+provider keys (CORR-013). It also confined the file tool and not the
+interpreter, so 371 episodes reached the network, 42 used one of those keys, and
+one read the grader source for the task it was being scored on (CORR-014). Both
+are closed and both have tests. If you build an agent harness: pass `env=`, and
+install an audit hook, because a tool-level path check is not a sandbox.
 
 ## CRUCIBLE-CHAIN
 

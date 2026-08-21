@@ -1,7 +1,17 @@
-# MarigoldBench — pre-release audit
+# MarigoldBench — audit
 
 Every number in this benchmark was recomputed from the recorded episodes by
-code written for this audit, not by the code that produced the scorecard. The
+code written for this audit, not by the code that produced the scorecard.
+
+**Second pass, 2026-08-20.** The first pass audited the statistics and the
+documents. It did not read the transcripts. Reading all 4,935 of them found
+three further defects, all ours, all now fixed and re-scored: a tool sandbox
+that confined the file tool and not the interpreter (CORR-014), a free-text
+checkpoint that scored a ruled-out explanation as a claim (CORR-015), and a
+submit handler that dropped 73 of one model's answers and none of another's
+(CORR-016). §9 records what that changed. The lesson is uncomfortable and worth
+stating plainly: a benchmark whose entire claim is that it recomputes what the
+model asserts was not recomputing what it asserted about itself. The
 audit scripts are `runs/_audit3.py`, `runs/_audit4.py`, `runs/_audit5.py` and
 `runs/_reverify_chunk.py`; the integrity and statistics passes are reproduced
 below in full, findings included. Four defects were found in our own claims and
@@ -140,3 +150,55 @@ group: the family-clustered intervals overlap heavily, which is what an ICC of
 0.40 over 30 families buys you. Any statement of the form "model A beats model
 B by 5 points on MarigoldBench" is unsupported by this release, including the
 ones that would flatter it.
+
+## 9. Second pass: what reading the transcripts found
+
+None of this came out of the statistics. It came out of reading what the models
+actually did, episode by episode.
+
+**The sandbox was not a sandbox (CORR-014).** `run_python` ran model-authored
+code with the harness's environment, the harness's network, and read access to
+the whole filesystem. 371 episodes called out to the network, 111 hit a named
+external service, 42 used one of our provider API keys, 6 listed the operator's
+home directory, 2 read another model's workspace, and one read the grader source
+for the task it was being scored on. Twelve answer-capable episodes are voided;
+the 371 network episodes are disclosed and tagged rather than voided, because the
+access mostly duplicated a computation our own tools perform and deleting 7.5% of
+the corpus would damage the measurement more than the contamination does.
+
+The motive was ours. `run_python` returns only the last 4,000 characters of
+stdout, so a model whose structure-prediction output was truncated could not read
+its own result. Several went to `api.esmatlas.com` for the same computation, some
+with our key. That limit is still in place, so the incentive still exists with
+the exit now closed.
+
+**A checkpoint scored a ruled-out explanation as a claim (CORR-015).** Both
+free-text checkpoints matched by substring against a hand-written negation list.
+"does not interfere" and "rules out quenching" were absent from the list, so an
+answer that named the mechanism and then cited the control excluding the other
+one was read as claiming both. In `assay-mechanism` C0 that failed **51 of 53
+episodes across all seven systems**, and the only two passes were the answers too
+terse to mention the control. Separately, the soundness vocabulary contained
+"hold" and "genuine", which fired on "holdout", "held-out", "threshold" and
+"genuinely unseen" - the report's own words. 141 submissions matched only inside
+a longer word or a negated phrase, and 138 of those failed.
+
+This was the third correction of that class. The previous two fixes both
+lengthened the literal list, which is why it returned. There is now one
+generative matcher, and the sentences from all three corrections are test cases.
+
+**We dropped one model's submissions (CORR-016).** 73 Claude episodes recorded
+`stop_reason: "submitted"` with nothing stored, against zero for GPT, because the
+handler read only `payload["result"]` and Claude had put its object in the
+`reasoning` argument. 50 were recoverable; re-verified, 27 verdicts changed. A
+harness that parses one model more strictly than another is the confound the
+frozen agent loop exists to prevent, and it went unnoticed through the entire
+first audit because the first audit compared verdicts to checkpoints and never
+asked why one system had 76 empty submissions and another had none.
+
+**What this does to the standing claim in §3.** The re-verification in §3 stands
+as reported: 279 of 279 sampled episodes reproduced their recorded verdict under
+the verifier as it then was. That was a determinism check, and it passed. It
+could not detect a verifier that was consistently wrong, which is what CORR-015
+was. Reproducibility and correctness are different properties, and this audit
+originally tested only the first.

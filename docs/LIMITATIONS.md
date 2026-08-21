@@ -87,6 +87,28 @@ raise and returns a wrong verdict that looks ordinary. We have no evidence of
 that, and it is the largest unquantified threat to label accuracy in this
 release. Replicate on hardware that passes a memory test. See CORR-011.
 
+**The tool sandbox was not isolated during the recorded campaign.** Model
+authored code ran with the harness's environment, network and filesystem, and
+371 of 4,935 episodes used it: 111 hit an external service, 42 used one of our
+provider keys, and one read the grader source for its own task. Twelve
+answer-capable episodes are voided and the rest are tagged in the published data
+so anyone can exclude them. The sandbox is closed now, and
+`tests/test_sandbox_containment.py` keeps it closed, but the numbers in this
+release were collected before that. See CORR-014.
+
+**Two task types were scored wrongly for every system until 2026-08-20.** Both
+read model prose by substring and treated a ruled-out explanation as a claim, so
+`assay-mechanism` failed 51 of 53 sound-condition episodes while the answers were
+correct. Everything is re-scored under one shared, tested matcher, and each
+record keeps its previous verdict, but any figure quoted from this benchmark
+before that date is wrong for those two families. See CORR-015.
+
+**Claude's numbers were depressed by our own parser.** 73 of its episodes
+recorded a submission and stored nothing, against zero for GPT, because it put
+its result object in the wrong argument and we read only one. 50 recovered, 27
+verdicts changed. A harness that parses one model more strictly than another is
+not a frozen loop, and we did not notice for a whole campaign. See CORR-016.
+
 ## 3. Threats to validity we actively monitor
 
 **Wrong keys.** The dominant risk in constructed-truth benchmarks: a generator

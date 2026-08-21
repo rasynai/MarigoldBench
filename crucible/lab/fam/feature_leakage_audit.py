@@ -747,14 +747,18 @@ CLAIM_UPHELD = ("claim stands", "claim holds", "claim is supported",
 
 
 def _strip_negated(text: str) -> str:
-    lowered = str(text or "").lower()
-    for phrase in sorted(NEGATED, key=len, reverse=True):
-        lowered = lowered.replace(phrase, " ")
-    return lowered
+    """Kept for callers that want the text; the matcher below does the work."""
+    from ..freetext import decided
+    return decided(text, SOUND_WORDS + LEAK_WORDS)
 
 
 def _says(text: str, vocabulary) -> bool:
-    return any(word in text for word in vocabulary)
+    """CORR-015: the old substring test fired on the report's own nouns, so
+    "the holdout set shares scaffolds with training" counted as a claim that
+    the result holds. Boundary matching plus generative negation, tested in
+    tests/test_freetext.py."""
+    from ..freetext import asserts
+    return asserts(text, vocabulary)
 
 
 def _names_column(text: str, column: str) -> bool:

@@ -108,6 +108,54 @@ class EpisodeResult:
     usage: dict = field(default_factory=dict)
 
 
+def _submission(payload: dict) -> tuple[object, str]:
+    """Read a submission liberally, then explain why that is not cheating.
+
+    CORR-016: 73 Claude episodes recorded stop_reason "submitted" with nothing
+    stored, against zero for GPT, because the model put its result object in the
+    `reasoning` argument or passed `result` as a JSON string. Scoring those as
+    empty submissions charged one model for a parsing choice of ours, which is
+    exactly the scaffold confound the frozen loop exists to prevent.
+
+    Liberal here means recovering an object the model did emit. It never
+    invents, repairs or completes one: a salvaged blob still has to satisfy
+    every checkpoint on its own.
+    """
+    result = payload.get("result")
+    reasoning = payload.get("reasoning", "") or ""
+    if isinstance(result, dict) and result:
+        return result, reasoning
+    for text in (result if isinstance(result, str) else None, reasoning):
+        if not isinstance(text, str) or "{" not in text:
+            continue
+        found = _first_object(text)
+        if found is not None:
+            return found, reasoning
+    return result, reasoning
+
+
+def _first_object(text: str) -> dict | None:
+    """The outermost balanced JSON object in a blob of prose, or None."""
+    start = text.find("{")
+    while start != -1:
+        depth = 0
+        for index in range(start, len(text)):
+            if text[index] == "{":
+                depth += 1
+            elif text[index] == "}":
+                depth -= 1
+                if depth == 0:
+                    try:
+                        candidate = json.loads(text[start:index + 1])
+                    except json.JSONDecodeError:
+                        break
+                    if isinstance(candidate, dict) and candidate:
+                        return candidate
+                    break
+        start = text.find("{", start + 1)
+    return None
+
+
 def _anthropic_loop(model: str, brief: str, belt: ToolBelt,
                     max_turns: int, max_tokens: int, effort: str) -> EpisodeResult:
     import anthropic
@@ -155,8 +203,7 @@ def _anthropic_loop(model: str, brief: str, belt: ToolBelt,
         results = []
         for use in tool_uses:
             if use.name == "submit":
-                submitted = use.input.get("result")
-                reasoning = use.input.get("reasoning", "")
+                submitted, reasoning = _submission(dict(use.input))
                 stop = "submitted"
                 break
             try:
@@ -225,8 +272,8 @@ def _responses_loop(model: str, brief: str, belt: ToolBelt, max_turns: int,
             except json.JSONDecodeError:
                 args = {}
             if call.name == "submit":
-                submitted = args.get("result")
-                reasoning = args.get("reasoning", "") or reasoning
+                submitted, text = _submission(args)
+                reasoning = text or reasoning
                 stop = "submitted"
                 break
             try:
@@ -336,8 +383,7 @@ def _openai_loop(provider: str, model: str, brief: str, belt: ToolBelt,
             except json.JSONDecodeError:
                 args = {}
             if name == "submit":
-                submitted = args.get("result")
-                reasoning = args.get("reasoning", "")
+                submitted, reasoning = _submission(args)
                 stop = "submitted"
                 break
             try:

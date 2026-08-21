@@ -324,6 +324,69 @@ SECRET_MARKERS = ("KEY", "TOKEN", "SECRET", "PASSWORD", "CREDENTIAL", "AUTH",
                   "COOKIE", "SESSION", "PRIVATE")
 
 
+# CORR-014: the sandbox confined the file TOOL and not the interpreter, so
+# model-authored code could read anything the harness could: 371 episodes
+# reached the network, 42 used one of our provider keys, 6 swept the operator's
+# home directory, and one read the grader for the task it was being scored on.
+# An audit hook cannot be unregistered once installed, so this prelude runs
+# before the model's code and stays in force. Imports still need the Python
+# installation, so reads are allowed there and denied under the repository.
+SANDBOX_PRELUDE = '''
+import sys as _sys, os as _os
+_WORKSPACE = _os.path.realpath(r"{workspace}")
+_ALLOWED_READ = tuple(_os.path.realpath(p) for p in
+                      (_sys.prefix, _sys.base_prefix, _os.path.dirname(_os.__file__))
+                      if p)
+# ctypes.dlopen and winreg.OpenKey are NOT here: numpy, torch and rdkit load
+# native libraries through them, and denying those turns the lockdown into an
+# outage. The probe in runs/_probe_sandbox.py exists to catch that.
+_DENY_EVENTS = ("socket.connect", "socket.getaddrinfo", "socket.gethostbyname",
+                "urllib.Request", "http.client.connect", "ftplib.connect",
+                "subprocess.Popen", "os.exec", "os.posix_spawn", "os.system",
+                "os.fork")
+# Listing a directory is not an "open" event, and reading the operator's home
+# directory in six episodes was done with os.listdir.
+_PATH_EVENTS = ("os.listdir", "os.scandir", "pathlib.Path.glob",
+                "pathlib.Path.rglob", "glob.glob", "os.walk")
+
+
+def _guard(event, args):
+    if event in _DENY_EVENTS:
+        raise PermissionError(
+            "the sandbox has no network and cannot spawn processes; use the "
+            "provided tools for folding, docking and design")
+    if event in _PATH_EVENTS or event == "open":
+        target = args[0] if args else None
+        if hasattr(target, "__fspath__"):
+            target = target.__fspath__()
+        if isinstance(target, (str, bytes)):
+            if isinstance(target, bytes):
+                target = target.decode("utf-8", "replace")
+            try:
+                full = _os.path.realpath(target)
+            except (OSError, ValueError):
+                return
+            if full.startswith(_WORKSPACE):
+                return
+            if any(full.startswith(root) for root in _ALLOWED_READ):
+                return
+            mode = args[1] if len(args) > 1 and isinstance(args[1], str) else "r"
+            if event != "open":
+                raise PermissionError(
+                    "the sandbox can only list directories inside its own "
+                    "workspace")
+            if any(flag in mode for flag in "wax+"):
+                raise PermissionError(
+                    "the sandbox can only write inside its own workspace")
+            raise PermissionError(
+                "the sandbox can only read files inside its own workspace")
+
+
+_sys.addaudithook(_guard)
+del _guard
+'''
+
+
 def _sandbox_env() -> dict:
     """A minimal environment for model-authored code: no credentials in it."""
     import os
@@ -350,7 +413,10 @@ def run_python(belt: ToolBelt, code: str, timeout: int = 240) -> dict:
     import subprocess
     import sys
     script = belt.workspace / "_step.py"
-    script.write_text(code, encoding="utf-8")
+    # The workspace path goes into a raw string literal in the prelude, so the
+    # backslashes are already safe; nothing to escape here.
+    prelude = SANDBOX_PRELUDE.format(workspace=str(belt.workspace.resolve()))
+    script.write_text(prelude + "\n" + code, encoding="utf-8")
     # CREATE_NO_WINDOW: without it, every sandbox call from a windowless
     # worker flashes a console window onto the desktop. With many workers each
     # running model-authored code, that is a constant interruption for whoever

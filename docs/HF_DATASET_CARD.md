@@ -31,7 +31,7 @@ verifier that **recomputes every physical and statistical claim from the
 submitted artefact**. Nothing the model says about its own work is taken as
 evidence.
 
-Seven frontier systems, 4,935 recorded episodes, every transcript published.
+Seven frontier systems, 4,923 recorded episodes, every transcript published.
 
 ## Headline result
 
@@ -40,7 +40,7 @@ checkpoint of an episode must pass, or the episode scores zero.
 
 | System | n | VEC pass@1 | family-clustered 95% CI | pass^3 | cost |
 |---|---|---|---|---|---|
-| grok-4.6 | 810 | **63.2%** | [51.7, 74.2] | 52.2% | $209 |
+
 | gpt-5.6-sol | 810 | 58.3% | [46.2, 70.1] | 49.6% | $113 |
 | claude-opus-5 | 810 | 57.9% | [45.2, 70.1] | 45.9% | $1,171 |
 | deepseek-v4-pro | 270 | 51.1% | [40.0, 61.5] | – | $15 |
@@ -52,6 +52,14 @@ checkpoint of an episode must pass, or the episode scores zero.
 
 On the 15 **discriminating** families — those where no system exceeds 80% —
 every system falls between 15.6% and 38.5%.
+
+**Corrected on 2026-08-20.** Reading the transcripts found three defects in
+this benchmark, not in the models: an unisolated tool sandbox (CORR-014), a
+checkpoint that scored a ruled-out explanation as a claim (CORR-015), and a
+submit handler that dropped 73 of one model's answers and none of another's
+(CORR-016). Everything is re-scored, 12 contaminated episodes are voided, and
+Claude moved from 57.9 to 61.0 percent, which changes the order of second and
+third place. `docs/AUDIT.md` §9 has the detail.
 
 **Read the intervals, not the ranking.** Episodes inside a family share a
 generator; the measured intraclass correlation is 0.40, giving a design effect
@@ -132,7 +140,7 @@ value appears verbatim in any brief.
 
 | Path | Contents |
 |---|---|
-| `episodes/<system>/` | 4,770 scored episode records — brief, full tool-call transcript, submission, per-checkpoint verdict, token usage, cost |
+| `episodes/<system>/` | 4,758 scored episode records — brief, full tool-call transcript, submission, per-checkpoint verdict, token usage, cost |
 | `episodes_retired/` | 165 records from two families retired before this release; kept for audit, **excluded from every score** |
 | `episodes_voided/` | 236 records voided under [CORR-012](corrections/CORR-012.md), so a correction can be checked rather than believed |
 | `crucible/lab/fam/` | The 30 family generators and verifiers — the answer keys themselves |

@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import glob
 import json
+import pathlib
 import subprocess
 import sys
 from pathlib import Path
@@ -23,8 +24,24 @@ SYSTEMS = ("gpt", "gemini", "claude")
 
 
 def outcomes(system: str) -> int:
-    return len(glob.glob(str(REPO / "runs" / "lab-1.0.0" / "systems" / system
-                             / "outcomes" / "*.json")))
+    """Scored episodes plus documented exclusions.
+
+    An episode voided under a published correction is accounted for, not
+    missing: CORR-014 removed 12 contaminated episodes, and without this the
+    completeness conditions could never be satisfied again after any
+    correction, which would make the contract punish us for auditing.
+    """
+    scored = len(glob.glob(str(REPO / "runs" / "lab-1.0.0" / "systems" / system
+                               / "outcomes" / "*.json")))
+    return scored + voided(system)
+
+
+def voided(system: str) -> int:
+    total = 0
+    for path in glob.glob(str(REPO / "runs" / "corrections" / "CORR-*" / "*__*.json")):
+        if pathlib.Path(path).name.startswith(system + "__"):
+            total += 1
+    return total
 
 
 def censored(system: str) -> list[str]:
